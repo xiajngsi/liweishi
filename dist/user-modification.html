@@ -16,6 +16,8 @@
       <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
       <link rel="stylesheet" href="assets/font-awesome/css/iconfont.css"/>
       <link rel="stylesheet" href="assets/font-awesome/css/iconfont-index.css"/>
+      <!-- Bootstrap-table-->
+      <link href="assets/bootstrap-table/bootstrap-table.css" rel="stylesheet" type="text/css" />
       <link href='http://fonts.useso.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -83,9 +85,9 @@
         </li>
         <li class="submenu"> <a href="#"><i class="iconfont icon-weifenxiaopcjiemianzhuanhuan"></i> <span>销售管理</span> <span class="icon-sort-down icon-right"></span></a>
             <ul>
-                <li><a href="form-common.html">Basic Form</a></li>
-                <li><a href="form-validation.html">Form with Validation</a></li>
-                <li><a href="form-wizard.html">Form with Wizard</a></li>
+                <li><a href="form-common.html">销售线索</a></li>
+                <li><a href="form-validation.html">项目销售</a></li>
+                <li><a href="form-wizard.html">销售报表</a></li>
             </ul>
         </li>
         <li class="submenu"> <a href="#"><i class="iconfont icon-jiaoliupingtai"></i> <span>内部交流</span> <span class="icon-sort-down icon-right"></span></a>
@@ -205,10 +207,10 @@
                               </div>
                           </div>
 
-                          <table class="table table-bordered data-table ">
+                          <table class="table table-bordered table-striped data-table with-check">
                               <thead>
                                   <tr>
-                                      <!--<th><input type="checkbox" id="title-table-checkbox" name="title-table-checkbox" /></th>-->
+                                      <th><input type="checkbox" id="title-table-checkbox" name="title-table-checkbox" style="opacity: 1;"/></th>
                                       <th>注册时间</th>
                                       <th>机构识别号</th>
                                       <th>机构属性</th>
@@ -221,12 +223,9 @@
                                       <th>修改</th>
                                   </tr>
                               </thead>
-
                               <tbody>
                                 <tr class="gradeX">
-<!--
-                                    <td><input type="checkbox" /></td>
--->
+                                    <td><input type="checkbox" style="opacity: 1;"/></td>
                                     <td>2014-05-05</td>
                                     <td class=" ">3333</td>
                                     <td class=" ">单店</td>
@@ -239,9 +238,7 @@
                                     <td><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
                                 </tr>
                                 <tr class="gradeA">
-<!--
-                                    <td><input type="checkbox" /></td>
--->
+                                    <td><input type="checkbox" style="opacity: 1;"/></td>
                                     <td>2014-05-05</td>
                                     <td >20000063</td>
                                     <td >单店</td>
@@ -254,6 +251,7 @@
                                     <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
                                 </tr>
                                 <tr class="gradeA">
+                                    <td><input type="checkbox" style="opacity: 1;"/></td>
                                     <td >2014-05-05</td>
                                     <td class=" ">20000063</td>
                                     <td class=" ">单店</td>
@@ -266,6 +264,7 @@
                                     <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
                                 </tr>
                                 <tr class="gradeA">
+                                    <td><input type="checkbox" style="opacity: 1;" /></td>
                                     <td >2014-05-05</td>
                                     <td class=" ">20000063</td>
                                     <td class=" ">单店</td>
@@ -278,6 +277,7 @@
                                     <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
                                 </tr>
                                 <tr class="gradeA">
+                                    <td><input type="checkbox" style="opacity: 1;"/></td>
                                     <td >2014-05-05</td>
                                     <td class=" ">20000063</td>
                                     <td class=" ">单店</td>
@@ -290,6 +290,7 @@
                                     <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
                                 </tr>
                                 <tr class="gradeA">
+                                    <td><input type="checkbox" style="opacity: 1;"/></td>
                                     <td >2014-05-05</td>
                                     <td class=" ">20000063</td>
                                     <td class=" ">单店</td>
@@ -302,6 +303,7 @@
                                     <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
                                 </tr>
                                 <tr class="gradeA">
+                                    <td><input type="checkbox" style="opacity: 1;"/></td>
                                     <td >2014-05-05</td>
                                     <td class=" ">20000063</td>
                                     <td class=" ">单店</td>
@@ -314,6 +316,7 @@
                                     <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
                                 </tr>
                                 <tr class="gradeA">
+                                    <td><input type="checkbox" style="opacity: 1;"/></td>
                                     <td >2014-05-05</td>
                                     <td class=" ">20000063</td>
                                     <td class=" ">单店</td>
@@ -333,14 +336,14 @@
         </div>
     </div>
 </div>
-<script src="assets/js/jquery.min.js"></script>
+<!--<script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.ui.custom.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.uniform.js"></script>
 <script src="assets/js/select2.min.js"></script>
 <script src="assets/js/jquery.dataTables.min.js"></script>
 <script src="assets/js/matrix.js"></script>
-<script src="assets/js/matrix.tables.js"></script>
+<script src="assets/js/matrix.tables.js"></script>-->
 
       <!--Footer-part-->
 <div class="row-fluid">
@@ -370,7 +373,6 @@
       <script src="assets/js/jquery.dataTables.min.js"></script>
       <script src="assets/js/matrix.tables.js"></script>
       <script src="assets/app/js/index.js"></script>
-
       <script type="text/javascript">
           // This function is called from the pop-up menus to transfer to
           // a different page. Ignore if the value returned is a null string:
