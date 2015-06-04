@@ -141,313 +141,206 @@
             <a href="#" class="tip-bottom" data-original-title="">开户注册</a>
             <a href="#" class="current">修改用户</a>
         </div>
-        <h1>Tables</h1>
+        <h1>修改用户</h1>
     </div>
     <div class="container-fluid">
         <hr>
         <div class="row-fluid">
-            <div class="span12">
-                <div class="widget-box">
-                    <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-                        <h5>Data table</h5>
-                    </div>
-                    <div class="widget-content nopadding">
+             <div class="span12">
+                  <div class="widget-box">
+                      <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
+                          <h5>注册用户表</h5>
+                      </div>
+                      <div class="widget-content nopadding">
+                          <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
+                              <!--<div class="show-linenum">
+                                  <label class="inline-lable">显示</label>
+                                  <select class="select-num span1">
+                                      <option value="10">10</option>
+                                      <option value="25">25</option>
+                                      <option value="50">50</option>
+                                      <option value="100">100</option>
+                                  </select >
+                                  <label class="inline-lable">行</label>
+                              </div>
+                              <div class="table-label">仅显示三个月内新注册用户</div>-->
+                              <div class="toolbar">
+                                  <a class="toolbar-btn" href="#">
+                                      <span class="icon-refresh"></span>
+                                  </a>
+                                  <a class="toolbar-btn" href="#">
+                                      <span class="icon-plus"></span>
+                                      <span class="text">新建</span>
+                                  </a>
+                                  <a class="toolbar-btn" href="#">
+                                      <span class=" icon-remove"></span>
+                                      <span class="text">删除</span>
+                                  </a>
+                                  <!--<a class="toolbar-btn" href="#">
+                                      <span class="icon icon-stop"></span>
+                                      <span class="text">关机</span>
+                                  </a>-->
+                                  <!--<div class="dropdown btn-disabled">
+                                      <input class="dropdown-toggle" type="text">
+                                      <span class="text">删除</span>
+                                      </a>
+                                  </div>-->
+                                  <!--<div class="toolbar-search " >
+                                      <p class="filter-table">Filter: <input type="search" placeholder="search this table" name="" id="toolbar-searchinput"></p>
+                                      &lt;!&ndash;<p class="filter-table">搜索:
+                                          <input type="search" placeholder="按用户特征搜索" id="toolbar-searchinput">
+                                      </p>&ndash;&gt;
+                                  </div>-->
+                                  <!--<div class="pagination">
+                                      <span class="per-page">每页显示：&nbsp;</span>
+                                      <div class="select-con">
+                                          <select class="dropdown-select" name="limit">
+                                              <option value="10" selected="">10</option>
+                                              <option value="20">20</option>
+                                              <option value="50">50</option>
+                                              <option value="100">100</option>
+                                          </select>
+                                      </div>
+                                  </div>-->
+                              </div>
+                          </div>
 
-                        <div class="row-fluid">
-                            <div class="span12">
-                                <div class="widget-box">
-                                    <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
-                                        <h5>注册用户表</h5>
-                                    </div>
-                                    <div class="widget-content nopadding">
-                                        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
+                          <table class="table table-bordered data-table ">
+                              <thead>
+                                  <tr>
+                                      <!--<th><input type="checkbox" id="title-table-checkbox" name="title-table-checkbox" /></th>-->
+                                      <th>注册时间</th>
+                                      <th>机构识别号</th>
+                                      <th>机构属性</th>
+                                      <th>公司名称</th>
+                                      <th>品牌名称</th>
+                                      <th>负责人</th>
+                                      <th>主账号</th>
+                                      <th>到期时间</th>
+                                      <th>付费状态</th>
+                                      <th>修改</th>
+                                  </tr>
+                              </thead>
 
-                                            <!--<div class="show-linenum">
-                                                <label class="inline-lable">显示</label>
-                                                <select class="select-num span1">
-                                                    <option value="10">10</option>
-                                                    <option value="25">25</option>
-                                                    <option value="50">50</option>
-                                                    <option value="100">100</option>
-                                                </select >
-                                                <label class="inline-lable">行</label>
-                                            </div>
-                                            <div class="table-label">仅显示三个月内新注册用户</div>-->
-                                            <div class="toolbar">
-                                                <a class="toolbar-btn" href="#">
-                                                    <span class="icon-refresh"></span>
-                                                </a>
-                                                <a class="toolbar-btn" href="#">
-                                                    <span class="icon-plus"></span>
-                                                    <span class="text">新建</span>
-                                                </a>
-                                                <a class="toolbar-btn" href="#">
-                                                    <span class=" icon-remove"></span>
-                                                    <span class="text">删除</span>
-                                                </a>
-                                                <!--<a class="toolbar-btn" href="#">
-                                                    <span class="icon icon-stop"></span>
-                                                    <span class="text">关机</span>
-                                                </a>-->
-                                                <!--<div class="dropdown btn-disabled">
-                                                    <input class="dropdown-toggle" type="text">
-                                                    <span class="text">删除</span>
-                                                    </a>
-                                                </div>-->
-                                                <!--<div class="toolbar-search " >
-                                                    <p class="filter-table">Filter: <input type="search" placeholder="search this table" name="" id="toolbar-searchinput"></p>
-                                                    &lt;!&ndash;<p class="filter-table">搜索:
-                                                        <input type="search" placeholder="按用户特征搜索" id="toolbar-searchinput">
-                                                    </p>&ndash;&gt;
-                                                </div>-->
-                                                <!--<div class="pagination">
-                                                    <span class="per-page">每页显示：&nbsp;</span>
-                                                    <div class="select-con">
-                                                        <select class="dropdown-select" name="limit">
-                                                            <option value="10" selected="">10</option>
-                                                            <option value="20">20</option>
-                                                            <option value="50">50</option>
-                                                            <option value="100">100</option>
-                                                        </select>
-                                                    </div>
-                                                </div>-->
-                                            </div>
-                                        </div>
-
-                                        <table class="table table-bordered data-table dataTable" id="DataTables_Table_0">
-                                            <thead>
-                                            <tr role="row">
-                                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                    aria-sort="ascending"
-                                                    aria-label="Rendering engine: activate to sort column descending"
-                                                    style="width: 214px;">
-                                                    <div class="DataTables_sort_wrapper">注册时间<span
-                                                            class="DataTables_sort_icon css_right ui-icon ui-icon-triangle-1-n"></span>
-                                                    </div>
-                                                </th>
-                                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                    aria-label="Browser: activate to sort column ascending"
-                                                    style="width: 304px;">
-                                                    <div class="DataTables_sort_wrapper">机构识别号<span
-                                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                                    </div>
-                                                </th>
-                                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                    aria-label="Platform(s): activate to sort column ascending"
-                                                    style="width: 293px;">
-                                                    <div class="DataTables_sort_wrapper">机构属性<span
-                                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                                    </div>
-                                                </th>
-                                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                    aria-label="Engine version: activate to sort column ascending"
-                                                    style="width: 192px;">
-                                                    <div class="DataTables_sort_wrapper">公司名称<span
-                                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                                    </div>
-                                                </th>
-                                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                    aria-label="Engine version: activate to sort column ascending"
-                                                    style="width: 192px;">
-                                                    <div class="DataTables_sort_wrapper">品牌名称<span
-                                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                                    </div>
-                                                </th>
-                                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                    aria-label="Engine version: activate to sort column ascending"
-                                                    style="width: 192px;">
-                                                    <div class="DataTables_sort_wrapper">负责人<span
-                                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                                    </div>
-                                                </th>
-                                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                    aria-label="Engine version: activate to sort column ascending"
-                                                    style="width: 192px;">
-                                                    <div class="DataTables_sort_wrapper">主账号<span
-                                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                                    </div>
-                                                </th>
-                                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                    aria-label="Engine version: activate to sort column ascending"
-                                                    style="width: 192px;">
-                                                    <div class="DataTables_sort_wrapper">到期时间<span
-                                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                                    </div>
-                                                </th>
-                                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                    aria-label="Engine version: activate to sort column ascending"
-                                                    style="width: 192px;">
-                                                    <div class="DataTables_sort_wrapper">付费状态<span
-                                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                                    </div>
-                                                </th>
-                                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                    aria-label="Engine version: activate to sort column ascending"
-                                                    style="width: 192px;">
-                                                    <div class="DataTables_sort_wrapper">修改<span
-                                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                                    </div>
-                                                </th>
-                                            </tr>
-                                            </thead>
-
-                                            <tbody role="alert" aria-live="polite" aria-relevant="all">
-                                            <tr class="gradeA odd">
-                                                <td class=" sorting_1">2014-05-05</td>
-                                                <td class=" ">20000063</td>
-                                                <td class=" ">单店</td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center ">停用</td>
-                                                <td class="center ">未付费</td>
-                                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                            </tr>
-                                            &lt;!&ndash;<tr class="gradeA even">
-                                                <td class=" sorting_1">2014-05-05</td>
-                                                <td class=" ">20000063</td>
-                                                <td class=" ">单店</td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center ">停用</td>
-                                                <td class="center ">未付费</td>
-                                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                            </tr>&ndash;&gt;
-                                            <tr class="gradeA odd">
-                                                <td class=" sorting_1">2014-05-05</td>
-                                                <td class=" ">20000063</td>
-                                                <td class=" ">单店</td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center ">停用</td>
-                                                <td class="center ">未付费</td>
-                                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                            </tr>
-                                            <tr class="gradeA even">
-                                                <td class=" sorting_1">2014-05-05</td>
-                                                <td class=" ">20000063</td>
-                                                <td class=" ">单店</td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center ">停用</td>
-                                                <td class="center ">未付费</td>
-                                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                            </tr>
-                                            <tr class="gradeA odd">
-                                                <td class=" sorting_1">2014-05-05</td>
-                                                <td class=" ">20000063</td>
-                                                <td class=" ">单店</td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center ">停用</td>
-                                                <td class="center ">未付费</td>
-                                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                            </tr>
-                                            <tr class="gradeA even">
-                                                <td class=" sorting_1">2014-05-05</td>
-                                                <td class=" ">20000063</td>
-                                                <td class=" ">单店</td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center ">停用</td>
-                                                <td class="center ">未付费</td>
-                                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                            </tr>
-                                            <tr class="gradeA odd">
-                                                <td class=" sorting_1">2014-05-05</td>
-                                                <td class=" ">20000063</td>
-                                                <td class=" ">单店</td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center ">停用</td>
-                                                <td class="center ">未付费</td>
-                                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                            </tr>
-                                            &lt;!&ndash;<tr class="gradeA even">
-                                                <td class=" sorting_1">2014-05-05</td>
-                                                <td class=" ">20000063</td>
-                                                <td class=" ">单店</td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center "></td>
-                                                <td class="center ">停用</td>
-                                                <td class="center ">未付费</td>
-                                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                            </tr>&ndash;&gt;
-                                            </tbody>
-                                        </table>
-
-                                        <div class="fg-toolbar ui-toolbar ui-widget-header ui-corner-bl ui-corner-br ui-helper-clearfix">
-                                            <div class="dataTables_filter" id="DataTables_Table_0_filter"><label>Search: <input type="text" aria-controls="DataTables_Table_0"></label></div>
-                                            &lt;!&ndash;<div id="search">
-                                            <input type="text" placeholder="按用户特征搜索">
-                                            <button type="submit" class="tip-bottom" data-original-title="Search"><i class="icon-search icon-white"></i></button>
-                                        </div>&ndash;&gt;
-                                            &lt;!&ndash;<div class="dataTables_filter" id="DataTables_Table_0_filter">
-                                            <label>搜索: <input type="text" aria-controls="DataTables_Table_0">
-                                            </label>
-                                        </div>&ndash;&gt;
-                                            &lt;!&ndash;<div class="dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi ui-buttonset-multi paging_full_numbers"
-                                                             id="DataTables_Table_0_paginate">
-                                            <a tabindex="0"
-                                               class="first ui-corner-tl ui-corner-bl fg-button ui-button ui-state-default ui-state-disabled"
-                                               id="DataTables_Table_0_first">第一页</a>
-                                            <a tabindex="0"
-                                               class="previous fg-button ui-button ui-state-default ui-state-disabled"
-                                               id="DataTables_Table_0_previous">前一页</a><span>
-                        <a tabindex="0" class="fg-button ui-button ui-state-default ui-state-disabled">1</a><a
-                                                tabindex="0" class="fg-button ui-button ui-state-default">2</a>
-                        <a tabindex="0" class="fg-button ui-button ui-state-default">3</a><a tabindex="0"
-                                                                                             class="fg-button ui-button ui-state-default">4</a><a
-                                                tabindex="0" class="fg-button ui-button ui-state-default">5</a></span>
-                                            <a tabindex="0" class="next fg-button ui-button ui-state-default"
-                                               id="DataTables_Table_0_next">下一页</a>
-                                            <a tabindex="0" class="last ui-corner-tr ui-corner-br fg-button ui-button ui-state-default" id="DataTables_Table_0_last">最后一页</a>
-                                        </div&ndash;&gt;>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                </div>
-        <!--<div class="container-fluid">
-            <h4>修改用戶</h4>
-            <hr>
-
-        </div>-->
-            </div>
+                              <tbody>
+                                <tr class="gradeX">
+<!--
+                                    <td><input type="checkbox" /></td>
+-->
+                                    <td>2014-05-05</td>
+                                    <td class=" ">3333</td>
+                                    <td class=" ">单店</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>停用</td>
+                                    <td>未付费</td>
+                                    <td><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
+                                </tr>
+                                <tr class="gradeA">
+<!--
+                                    <td><input type="checkbox" /></td>
+-->
+                                    <td>2014-05-05</td>
+                                    <td >20000063</td>
+                                    <td >单店</td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td >停用</td>
+                                    <td >未付费</td>
+                                    <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
+                                </tr>
+                                <tr class="gradeA">
+                                    <td >2014-05-05</td>
+                                    <td class=" ">20000063</td>
+                                    <td class=" ">单店</td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td >停用</td>
+                                    <td >未付费</td>
+                                    <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
+                                </tr>
+                                <tr class="gradeA">
+                                    <td >2014-05-05</td>
+                                    <td class=" ">20000063</td>
+                                    <td class=" ">单店</td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td >停用</td>
+                                    <td >未付费</td>
+                                    <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
+                                </tr>
+                                <tr class="gradeA">
+                                    <td >2014-05-05</td>
+                                    <td class=" ">20000063</td>
+                                    <td class=" ">单店</td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td >停用</td>
+                                    <td >未付费</td>
+                                    <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
+                                </tr>
+                                <tr class="gradeA">
+                                    <td >2014-05-05</td>
+                                    <td class=" ">20000063</td>
+                                    <td class=" ">单店</td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td >停用</td>
+                                    <td >未付费</td>
+                                    <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
+                                </tr>
+                                <tr class="gradeA">
+                                    <td >2014-05-05</td>
+                                    <td class=" ">20000063</td>
+                                    <td class=" ">单店</td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td >停用</td>
+                                    <td >未付费</td>
+                                    <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
+                                </tr>
+                                <tr class="gradeA">
+                                    <td >2014-05-05</td>
+                                    <td class=" ">20000063</td>
+                                    <td class=" ">单店</td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td >停用</td>
+                                    <td >未付费</td>
+                                    <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
+                                </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+             </div>
         </div>
     </div>
-
 </div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.ui.custom.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.uniform.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/jquery.dataTables.min.js"></script>
+<script src="assets/js/matrix.js"></script>
+<script src="assets/js/matrix.tables.js"></script>
 
       <!--Footer-part-->
 <div class="row-fluid">
@@ -477,7 +370,6 @@
       <script src="assets/js/jquery.dataTables.min.js"></script>
       <script src="assets/js/matrix.tables.js"></script>
       <script src="assets/app/js/index.js"></script>
-      <script src="assets/app/js/jquery.filtertable.min.js"></script>
 
       <script type="text/javascript">
           // This function is called from the pop-up menus to transfer to
@@ -540,10 +432,10 @@
 
           })($);
       </script>-->
-      <script>
+     <!-- <script>
           $(document).ready(function() {
               $('table').filterTable(); // apply filterTable to all tables on this page
           });
-      </script>
+      </script>-->
   </body>
 </html>

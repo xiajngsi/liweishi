@@ -1,9 +1,9 @@
 @login-margin: 3rem;
 /*修改框架样式 登录界面*/
-html body{
+/*html body{
   height: 100%;
   overflow: hidden;
-}
+}*/
 #search {
   position: absolute;
   z-index: 25;
@@ -260,7 +260,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 /*toolbar*/
 .toolbar {
   position: relative;
-  z-index: 4;
+  z-index: 0;
   margin: 10px 0;
 }
 .toolbar-btn{
@@ -445,4 +445,21 @@ input[type=search] {
 td.alt {
   background-color: #ffc;
   background-color: rgba(255, 255, 0, 0.2);
+}
+/*
+重新定义表格显示列的位置*/
+.dataTables_length {
+  color: #878787;
+  margin: 7px 5px 0;
+  position: relative;
+  left: 200px;
+  width: 50%;
+  top: -43px;
+}
+.dataTables_length select{
+  width: 100px;
+}
+.nopadding .table-bordered {
+  border: 0;
+  margin-top: -40px;
 }
