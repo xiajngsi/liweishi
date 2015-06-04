@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 
     watch: {
       assemble: {
-        files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}'],
+        files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}','<%= config.src %>/{assets}/{,*/}*.{less,css}'],
         tasks: ['assemble']
       },
       livereload: {
@@ -39,6 +39,7 @@ module.exports = function(grunt) {
         },
         files: [
           '<%= config.dist %>/{,*/}*.html',
+          '<%= config.dist %>/assets/{,*/}*.less',
           '<%= config.dist %>/assets/{,*/}*.css',
           '<%= config.dist %>/assets/{,*/}*.js',
           '<%= config.dist %>/assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -71,7 +72,7 @@ module.exports = function(grunt) {
           layout: '<%= config.src %>/templates/layouts/default.hbs',
           data: '<%= config.src %>/data/*.{json,yml}',
           partials: '<%= config.src %>/templates/partials/*.hbs',
-          plugins: ['assemble-contrib-permalinks','assemble-contrib-sitemap'],
+          plugins: ['assemble-contrib-permalinks','assemble-contrib-sitemap']
         },
         files: {
           '<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs']
@@ -101,6 +102,8 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('assemble-less');
 
   grunt.registerTask('server', [
     'build',
@@ -117,5 +120,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'build'
   ]);
+
 
 };

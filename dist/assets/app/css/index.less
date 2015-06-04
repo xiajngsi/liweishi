@@ -1,11 +1,75 @@
+@login-margin: 3rem;
+/*修改框架样式 登录界面*/
+html body{
+  height: 100%;
+  overflow: hidden;
+}
+#search {
+  position: absolute;
+  z-index: 25;
+  top: 42px;
+  right: 10px;
+}
+body {
+  overflow-x: hidden;
+  margin-top: -10px;
+  font-family: 'Microsoft YaHei','Open Sans', sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .label, .dropdown-menu, .btn, .well, .progress, .table-bordered, .btn-group > .btn:first-child, .btn-group > .btn:last-child, .btn-group > .btn:last-child, .btn-group > .dropdown-toggle, .alert {
+  border-radius: 3px;
+}
+#loginbox .controls {
+  padding: 0 5%;
+}
+#loginbox {
+  overflow: hidden !important;
+  text-align: left;
+  position: relative;
+  top: 100px;
+}
+#loginbox .main_input_box .add-on {
+  padding: 9px 9px;
+  color: #fff;
+  width: 10%;
+  display: inline-block;
+}
+#loginbox .main_input_box input {
+  height: 30px;
+  border: 0px;
+  display: inline-block;
+  width: 80%;
+  line-height: 28px;
+  margin-bottom: 3px;
+}
+#loginbox .form-actions {
+  padding: 14px 5% 15px;
+}
+.pull{
+  color: #ffffff;
+}
+.pull-left{
+  &:extend(.pull);
+}
+.pull-right{
+  &:extend(.pull);
+}
+.btn-forget{
+  background-color: #00a7cd;
+}
+.btn-login{
+  background-color: #36af52;
+}
+
 .header-img{
-  height: 20px;
-  left: 20px;
-  /*line-height: 600px;*/
+  height: 30px;
+  left: 35px;
   overflow: hidden;
   position: relative;
-  top: 26px;
-  width: 151px;
+  top: 23.5px;
+  width: 150px;
+  margin: auto auto;
 }
 .header-h1 {
   display: block;
@@ -23,6 +87,14 @@
 .form-horizontal .control-label {
   padding-top: 15px;
   width: 100px;
+}
+.control-label-right {
+  padding-top: 15px;
+  width: 70px;
+}
+.form-horizontal .control-label-3 {
+  padding-top: 15px;
+  width: 60px;
 }
 .form-horizontal .controls {
   margin-left: 120px;
@@ -49,4 +121,328 @@
   margin: 10px 16px;
 }
 
+/*index*/
+.chart-name{
+  position: absolute;
+  width: 25px;
+  height: 8px;
+  border: 2px solid #ffffff;
+  top: 50px;
+}
+.icon-right{
+  position: absolute;
+  top: 14px;
+  right: 5px;
+}
+.chart-name1{
+  &:extend(.chart-name);
+  left: 40px;
+  background-color: red;
+}
+.chart-name2{
+  &:extend(.chart-name);
+  left: 240px;
+  background-color: #0000ff;
+}
+.chart-text{
+  position: absolute;
+  top: 46px;
+}
+.chart-text1{
+  &:extend(.chart-text);
+  left: 70px;
+}
+.chart-text2{
+  &:extend(.chart-text);
+  left: 270px;
+}
+#sidebar > ul > li {
+  border-top: 1px solid #37414b;
+  border-bottom: 1px solid #1f262d;
+  line-height: 37.8px;
+}
+.quick-width1 {
+  width: 14%;
+}
+.quick-width2{
+  width: 26%;
+}
+#sidebar > ul li ul li {
+  border-top: 1px solid #37414b;
+  border-bottom: 1px solid #1f262d;
+  line-height: 37.8px;
+}
+#sidebar > ul li ul li a {
+  padding: 10px 0 10px 50px;
+  display: block;
+  color: #777777;
+}
 
+/*client-modification*/
+.inline-lable{
+  display: inline;
+}
+.show-linenum{
+  margin: 5px;
+}
+.center{
+  margin: 0 auto;
+}
+/*client-add*/
+.userinfo-right{
+  margin-left: 120px;
+  margin-top: 15px;
+}
+/*login*/
+.login-img {
+  width: 15rem;
+  height: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.login-title{
+  margin-top: @login-margin;
+  width: 50%;
+  margin: 0 auto;
+}
+.title {
+  font-size: 180%;
+  font-weight: 700;
+  color: #8f9dab;
+  padding: 0;
+  margin: 0;
+}
+.pull-left{
+  border: 2px solid #325e6c;
+}
+.pull-right{
+  border: 2px solid #2a4c44;
+}
+/*自定义全局样式*/
+.width15{
+  display: inline;
+  width: 15%;
+}
+.width20{
+  display: inline;
+  width: 20%;
+}
+.width22{
+  display: inline;
+  width: 22%;
+}
+#search button {
+  border: 0;
+  margin-left: -7px;
+  margin-top: -11px;
+  padding: 5px 10px 4px;
+}
+#search input[type=text] {
+  background-color: #fff;
+  color: #000;
+}
+.table-label {
+  position: absolute;
+  left: 170px;
+  top: 42px;
+  width: 250px;
+  height: 24px;
+  text-align: center;
+  background-color: #41bed3;
+  border-radius: 3px;
+  padding-top: 4px;
+  margin-top: 3px;
+  color: #fff;
+}
+.select-num{
+  margin-top: 3px;
+}
+/*toolbar*/
+.toolbar {
+  position: relative;
+  z-index: 4;
+  margin: 10px 0;
+}
+.toolbar-btn{
+  display: inline-block;
+  padding: 7px 16px;
+  margin: 0 3px 0 0;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background: #3b3f4e;
+  color: #fff;
+  border: 0 none;
+  border-bottom: 2px solid #353946;
+  -webkit-appearance: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+}
+.toolbar-search{
+    margin: 0 10px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.toolbar .pagination{
+  float: right;
+}
+.pagination{
+  margin: 10px;
+}
+.pagination .per-page, .pagination .pages {
+  line-height: 33px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.pagination .select-con {
+  height: 29px;
+  margin-right: 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+.select-con {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+  position: relative;
+  height: 30px;
+  border: 2px solid #cbcad8;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(top,#fff,#ebebeb);
+  background-image: -moz-linear-gradient(top,#fff,#ebebeb);
+  background-image: -o-linear-gradient(top,#fff,#ebebeb);
+  background-image: linear-gradient(to bottom,#fff,#ebebeb);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,.08);
+  box-shadow: 0 1px 1px rgba(0,0,0,.08);
+}
+.pagination .dropdown-select {
+  padding: 6px 21px 6px 10px;
+  height: 29px;
+  width: 100px;
+}
+.toolbar-search .dropdown-select {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 6px 28px 6px 10px;
+  height: 30px;
+  line-height: 12px;
+  font-size: 12px;
+  -webkit-text-shadow: 0;
+  -moz-text-shadow: 0;
+  text-shadow: 0;
+  background: rgba(0,0,0,0)!important;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+input[type=search] {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  border: 0 none;
+  border: 2px solid #cbcad8;
+  background: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-appearance: none;
+}
+#toolbar-searchinput{
+  &:extend(.toolbar);
+  height: 24px;
+}
+.search-icon{
+  display: inline;
+  width: 20px;
+  background-color: #000;
+  left: -6px;
+  float: left;
+
+}
+/*客户查询*/
+.c-all{
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+.width10{
+  width: 10%;
+}
+.c-header{
+  height: 21px;
+  margin-right: 1%;
+  float: left;
+}
+.c-white{
+  &:extend(.c-all);
+  background-color: #fff;
+  border: 1px solid #ababab;
+
+}
+
+.c-dblue{
+  &:extend(.c-all);
+  background-color: #2356a2;
+  border: 1px solid #2356a2;
+
+}
+.c-red{
+  &:extend(.c-all);
+  background-color: #fd6960;
+  border: 1px solid #fd6960;
+}
+.c-yellow{
+  &:extend(.c-all);
+  background-color: #f9a830;
+  border: 1px solid #f9a830;
+}
+.c-green{
+  &:extend(.c-all);
+  background-color: #28b878;
+  border: 1px solid #28b878;
+}
+.c-lblue{
+  &:extend(.c-all);
+  background-color: #49afcc;
+  border: 1px solid #49afcc;
+}
+.c-dred{
+  &:extend(.c-all);
+  background-color: #da2436;
+  border: 1px solid #da2436;
+}
+.head-top, .head-bottom{
+  width: 100%;
+  margin-right: 1%;
+}
+.head-top{
+  position: absolute;
+  left: 12%;
+  top: 50px;
+  width: 100%;
+}
+.head-bottom{
+  position: absolute;
+  left: 12%;
+  top: 80px;
+  width: 100%;
+}
+.table td {
+  text-align: center;
+}
+td.alt {
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.2);
+}
