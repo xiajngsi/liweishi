@@ -134,6 +134,11 @@
 </div>
 
       
+---
+title: Home
+heading: 'Yo, Assemble!'
+lead: Welcome to my blog!
+---
 <div id="content">
     <div id="content-header">
         <div id="breadcrumb">
@@ -154,181 +159,43 @@
                           <h5>注册用户表</h5>
                       </div>
                       <div class="widget-content nopadding">
-                          <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
-                              <!--<div class="show-linenum">
-                                  <label class="inline-lable">显示</label>
-                                  <select class="select-num span1">
-                                      <option value="10">10</option>
-                                      <option value="25">25</option>
-                                      <option value="50">50</option>
-                                      <option value="100">100</option>
-                                  </select >
-                                  <label class="inline-lable">行</label>
-                              </div>
-                              <div class="table-label">仅显示三个月内新注册用户</div>-->
-                              <div class="toolbar">
-                                  <a class="toolbar-btn" href="#">
-                                      <span class="icon-refresh"></span>
-                                  </a>
-                                  <a class="toolbar-btn" href="#">
-                                      <span class="icon-plus"></span>
-                                      <span class="text">新建</span>
-                                  </a>
-                                  <a class="toolbar-btn" href="#">
-                                      <span class=" icon-remove"></span>
-                                      <span class="text">删除</span>
-                                  </a>
-                                  <!--<a class="toolbar-btn" href="#">
-                                      <span class="icon icon-stop"></span>
-                                      <span class="text">关机</span>
-                                  </a>-->
-                                  <!--<div class="dropdown btn-disabled">
-                                      <input class="dropdown-toggle" type="text">
-                                      <span class="text">删除</span>
-                                      </a>
-                                  </div>-->
-                                  <!--<div class="toolbar-search " >
-                                      <p class="filter-table">Filter: <input type="search" placeholder="search this table" name="" id="toolbar-searchinput"></p>
-                                      &lt;!&ndash;<p class="filter-table">搜索:
-                                          <input type="search" placeholder="按用户特征搜索" id="toolbar-searchinput">
-                                      </p>&ndash;&gt;
-                                  </div>-->
-                                  <!--<div class="pagination">
-                                      <span class="per-page">每页显示：&nbsp;</span>
-                                      <div class="select-con">
-                                          <select class="dropdown-select" name="limit">
-                                              <option value="10" selected="">10</option>
-                                              <option value="20">20</option>
-                                              <option value="50">50</option>
-                                              <option value="100">100</option>
-                                          </select>
-                                      </div>
-                                  </div>-->
-                              </div>
+                          <!--bootstrap table toolbar-->
+                          <div id="toolbar" class="btn-group">
+                              <button type="button" class="btn btn-default">
+                                  <i class="glyphicon glyphicon-plus"></i>
+                              </button>
+                              <button type="button" class="btn btn-default">
+                                  <i class="glyphicon glyphicon-heart"></i>
+                              </button>
+                              <button type="button" class="btn btn-default">
+                                  <i class="glyphicon glyphicon-trash"></i>
+                              </button>
                           </div>
-
-                          <table class="table table-bordered table-striped data-table with-check">
+                          <!--bootstrap table-->
+                          <table data-toggle="table"
+                                 data-url="http://mikepenz.com/jsfiddle/"
+                                 data-search="true"
+                                 data-show-refresh="true"
+                                 data-pagination="true"
+                                 data-side-pagination="server"
+                                 data-page-list="[5, 10, 20, 50, 100, 200]"
+                                 data-height="300" id="btable"
+                                 data-toolbar="#toolbar">
                               <thead>
-                                  <tr>
-                                      <th><input type="checkbox" id="title-table-checkbox" name="title-table-checkbox" style="opacity: 1;"/></th>
-                                      <th>注册时间</th>
-                                      <th>机构识别号</th>
-                                      <th>机构属性</th>
-                                      <th>公司名称</th>
-                                      <th>品牌名称</th>
-                                      <th>负责人</th>
-                                      <th>主账号</th>
-                                      <th>到期时间</th>
-                                      <th>付费状态</th>
-                                      <th>修改</th>
-                                  </tr>
+                              <tr>
+                                  <th data-field="state" data-checkbox="true"></th>
+                                  <th data-field="id" data-align="right" data-sortable="true">序列</th>
+                                  <th data-field="name" data-align="center" data-sortable="true">用户名称</th>
+                                  <th data-field="price" data-sortable="true">真实姓名</th>
+                                  <th data-field="price" data-sortable="true">联系电话</th>
+                                  <th data-field="price" data-sortable="true">用户角色</th>
+                                  <th data-field="price" data-sortable="true">所属区域</th>
+                                  <th data-field="price" data-sortable="true">创建时间</th>
+                                  <th data-field="price" data-sortable="true">创建人</th>
+                                  <th data-field="operate" data-sortable="true" data-formatter="operateFormatter"
+                                      data-events="operateEvents">操作</th>
+                              </tr>
                               </thead>
-                              <tbody>
-                                <tr class="gradeX">
-                                    <td><input type="checkbox" style="opacity: 1;"/></td>
-                                    <td>2014-05-05</td>
-                                    <td class=" ">3333</td>
-                                    <td class=" ">单店</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>停用</td>
-                                    <td>未付费</td>
-                                    <td><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td><input type="checkbox" style="opacity: 1;"/></td>
-                                    <td>2014-05-05</td>
-                                    <td >20000063</td>
-                                    <td >单店</td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td >停用</td>
-                                    <td >未付费</td>
-                                    <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td><input type="checkbox" style="opacity: 1;"/></td>
-                                    <td >2014-05-05</td>
-                                    <td class=" ">20000063</td>
-                                    <td class=" ">单店</td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td >停用</td>
-                                    <td >未付费</td>
-                                    <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td><input type="checkbox" style="opacity: 1;" /></td>
-                                    <td >2014-05-05</td>
-                                    <td class=" ">20000063</td>
-                                    <td class=" ">单店</td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td >停用</td>
-                                    <td >未付费</td>
-                                    <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td><input type="checkbox" style="opacity: 1;"/></td>
-                                    <td >2014-05-05</td>
-                                    <td class=" ">20000063</td>
-                                    <td class=" ">单店</td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td >停用</td>
-                                    <td >未付费</td>
-                                    <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td><input type="checkbox" style="opacity: 1;"/></td>
-                                    <td >2014-05-05</td>
-                                    <td class=" ">20000063</td>
-                                    <td class=" ">单店</td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td >停用</td>
-                                    <td >未付费</td>
-                                    <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td><input type="checkbox" style="opacity: 1;"/></td>
-                                    <td >2014-05-05</td>
-                                    <td class=" ">20000063</td>
-                                    <td class=" ">单店</td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td >停用</td>
-                                    <td >未付费</td>
-                                    <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td><input type="checkbox" style="opacity: 1;"/></td>
-                                    <td >2014-05-05</td>
-                                    <td class=" ">20000063</td>
-                                    <td class=" ">单店</td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td ></td>
-                                    <td >停用</td>
-                                    <td >未付费</td>
-                                    <td ><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                                </tr>
-                              </tbody>
                           </table>
                       </div>
                   </div>
@@ -336,14 +203,7 @@
         </div>
     </div>
 </div>
-<!--<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.ui.custom.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.uniform.js"></script>
-<script src="assets/js/select2.min.js"></script>
-<script src="assets/js/jquery.dataTables.min.js"></script>
-<script src="assets/js/matrix.js"></script>
-<script src="assets/js/matrix.tables.js"></script>-->
+
 
       <!--Footer-part-->
 <div class="row-fluid">
@@ -381,6 +241,7 @@
       <script src="assets/bootstrap-table/bootstrap-table.js" type="text/javascript"></script>
       <!--支持中文bootstap-table-->
       <script src="assets/bootstrap-table/bootstrap-table-zh-CN.js" type="text/javascript"></script>
+
       <script type="text/javascript">
           // This function is called from the pop-up menus to transfer to
           // a different page. Ignore if the value returned is a null string:
@@ -405,11 +266,12 @@
               document.gomenu.selector.selectedIndex = 2;
           }
       </script>
-
       <script>
-          $('#myTable').bootstrapTable({
+          $('#btable').bootstrapTable({
           });
       </script>
+
+
 
       <!--<script>
           (function($){
@@ -453,4 +315,4 @@
           });
       </script>-->
   </body>
-</html>
+</html>s
