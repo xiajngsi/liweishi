@@ -235,9 +235,10 @@
         icons: {
             paginationSwitchDown: 'glyphicon-collapse-down icon-chevron-down',
             paginationSwitchUp: 'glyphicon-collapse-up icon-chevron-up',
-            refresh: 'glyphicon-refresh icon-refresh',
+            refresh: 'icon-refresh',
             toggle: 'glyphicon-list-alt icon-list-alt',
-            columns: 'glyphicon-th icon-th'
+            columns: 'glyphicon-th icon-th',
+            inputSearch: 'icon-search'
         },
 
         rowStyle: function (row, index) {
@@ -892,10 +893,11 @@
         }
 
         if (this.options.search) {
+          this.options.iconSize = "icon-search";
             html = [];
             html.push(
                 '<div class="pull-' + this.options.searchAlign + ' search">',
-                sprintf('<input class="form-control' + (this.options.iconSize === undefined ? '' : ' input-' + this.options.iconSize) + '" type="text" placeholder="%s">',
+                sprintf('<input class="form-control' +(this.options.iconSize === undefined ? '' : ' input-' + this.options.iconSize) + '" type="search" placeholder="%s">',
                     this.options.formatSearch()),
                 '</div>');
 

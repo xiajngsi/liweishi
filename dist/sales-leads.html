@@ -140,65 +140,114 @@
             <a href="index.html" class="tip-bottom" data-original-title="Go to Home">
                 <i class="icon-home"></i>首页看板
             </a>
-            <a href="#" class="tip-bottom" data-original-title="">开户注册</a>
-            <a href="#" class="current">修改用户</a>
+            <a href="#" class="tip-bottom" data-original-title="">销售管理</a>
+            <a href="#" class="current">销售线索</a>
         </div>
     </div>
-
     <div class="container-fluid">
-        <div class="row-fluid">
-             <div class="span12">
-                  <div class="widget-box">
-                      <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
-                          <h5>注册用户表</h5>
-                      </div>
-                      <!--<div class="widget-content nopadding">-->
-                          <!--bootstrap table toolbar-->
-                      <div id="toolbar" class="btn-group">
-                          <button type="button" class="btn btn-default">
-                              <i class="icon-refresh">刷新</i>
-                          </button>
-                          <button type="button" class="btn btn-default">
-                              <i class=" icon-plus">新增</i>
-                          </button>
-                          <button type="button" class="btn btn-default">
-                              <i class=" icon-trash">删除</i>
-                          </button>
-
-                      </div>
-                          <!--bootstrap table-->
-                      <!--data-url="http://mikepenz.com/jsfiddle/" data-show-refresh="true"-->
-                      <table data-toggle="table"
-                                 data-url="http://mikepenz.com/jsfiddle/"
-                                 data-search="true"
-                                 data-pagination="true"
-                                 data-side-pagination="server"
-                                 data-page-list="[5, 10, 20, 50, 100, 200]"
-                                 data-height="300" id="utable"
-                                 data-toolbar="#toolbar">
-                              <thead>
-                              <tr>
-                                  <th data-field="state" data-checkbox="true"></th>
-                                  <th data-field="id" data-align="right" data-sortable="true">序列</th>
-                                  <th data-field="name" data-align="center" data-sortable="true">用户名称</th>
-                                  <th data-field="price" data-sortable="true">真实姓名</th>
-                                  <th data-field="price" data-sortable="true">联系电话</th>
-                                  <th data-field="price" data-sortable="true">用户角色</th>
-                                  <th data-field="price" data-sortable="true">所属区域</th>
-                                  <th data-field="price" data-sortable="true">创建时间</th>
-                                  <th data-field="price" data-sortable="true">创建人</th>
-                                  <th data-field="operate" data-sortable="true" data-formatter="operateFormatter"
-                                      data-events="operateEvents">操作</th>
-                              </tr>
-                              </thead>
-                          </table>
-                      <!--</div>-->
-                  </div>
-             </div>
+        <h3>销售线索</h3>
+        <div class="head-top">
+            <div class="width10 c-header c-dblue">跟进状态</div>
+            <select class="width10 c-header c-white">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <div class="width10 c-header c-yellow">录入时间</div>
+            <div class="width10 c-header c-white"></div>
+            <div class="width10 c-header c-white"></div>
+            <div class="width10 c-header c-dblue">店铺名称</div>
+            <div class="width10 c-header c-white"></div>
+            <!--<select class="width10 c-header c-white">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>-->
         </div>
+        <div class="head-bottom">
+            <div class="width10 c-header c-green">未跟进时间</div>
+            <select class="width10 c-header c-white">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <div class="width10 c-header c-lblue">店铺数量</div>
+            <div class="width10 c-header c-white"></div>
+            <div class="width10 c-header c-white"></div>
+            <div class="width10 c-header c-green">店铺定位</div>
+            <div class="width10 c-header c-white"></div>
+        </div>
+        <div class="sale-search">
+          <i class="icon-search"></i>
+          <span>搜索</span>
+        </div>
+        <hr>
+
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="widget-box">
+                    <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
+                        <h5>注册用户表</h5>
+                    </div>
+                   <!-- <div &lt;!&ndash;id="toolbar"&ndash;&gt; class="pull-left">
+
+
+
+                        &lt;!&ndash;<button type="button" class="btn btn-default">
+                            <i class="icon-refresh"></i>
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <i class=" icon-plus"></i>
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <i class=" icon-trash"></i>
+                        </button>&ndash;&gt;
+                    </div>-->
+                      <button type="button" class="btn btn-default pull-left" style="margin: 4px 4px;">
+                          <i class="icon-share-alt">转到客户公海</i>
+                      </button>
+                      <button type="button" class="btn btn-success pull-right" style="margin: 4px 4px;" data-toggle="modal" data-target="#addLeads">
+                          <i class="icon-plus">新增线索</i>
+                      </button>
+                    <table data-toggle="table"
+                           data-url="http://mikepenz.com/jsfiddle/"
+                           data-pagination="true"
+                           data-side-pagination="server"
+                           data-page-list="[5, 10, 20, 50, 100, 200]"
+                           data-height="300" id="stable"
+                           data-toolbar="#toolbar">
+                        <thead>
+                            <tr>
+                                <th data-field="state" data-checkbox="true"></th>
+                                <th data-field="id" data-align="right" data-sortable="true">录入时间</th>
+                                <th data-field="name" data-align="center">店铺名称</th>
+                                <th data-field="price">店铺属性</th>
+                                <th data-field="price" data-sortable="true">间数</th>
+                                <th data-field="price">店铺定位</th>
+                                <th data-field="price">联系人</th>
+                                <th data-field="price">职位</th>
+                                <th data-field="price">手机号</th>
+                                <th data-field="price">省份</th>
+                                <th data-field="price">城区</th>
+                                <th data-field="price">区/县</th>
+                                <th data-field="price">跟进状态</th>
+                                <!--<th data-field="operate" data-sortable="true" data-formatter="operateFormatter"
+                                    data-events="operateEvents">操作</th>-->
+                            </tr>
+                        </thead>
+                    </table>
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
-
+</div>
+</div>
 
       <!--Footer-part-->
 <div class="row-fluid">

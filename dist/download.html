@@ -133,72 +133,171 @@
     </ul>
 </div>
 
-      
-<div id="content">
+      <div id="content">
     <div id="content-header">
         <div id="breadcrumb">
             <a href="index.html" class="tip-bottom" data-original-title="Go to Home">
                 <i class="icon-home"></i>首页看板
             </a>
-            <a href="#" class="tip-bottom" data-original-title="">开户注册</a>
-            <a href="#" class="current">修改用户</a>
+            <a href="#" class="tip-bottom" data-original-title="">内部交流</a>
+            <a href="#" class="current">资料下载</a>
         </div>
     </div>
-
     <div class="container-fluid">
-        <div class="row-fluid">
-             <div class="span12">
-                  <div class="widget-box">
-                      <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
-                          <h5>注册用户表</h5>
-                      </div>
-                      <!--<div class="widget-content nopadding">-->
-                          <!--bootstrap table toolbar-->
-                      <div id="toolbar" class="btn-group">
-                          <button type="button" class="btn btn-default">
-                              <i class="icon-refresh">刷新</i>
-                          </button>
-                          <button type="button" class="btn btn-default">
-                              <i class=" icon-plus">新增</i>
-                          </button>
-                          <button type="button" class="btn btn-default">
-                              <i class=" icon-trash">删除</i>
-                          </button>
+        <h3>销售线索</h3>
 
-                      </div>
-                          <!--bootstrap table-->
-                      <!--data-url="http://mikepenz.com/jsfiddle/" data-show-refresh="true"-->
-                      <table data-toggle="table"
-                                 data-url="http://mikepenz.com/jsfiddle/"
-                                 data-search="true"
-                                 data-pagination="true"
-                                 data-side-pagination="server"
-                                 data-page-list="[5, 10, 20, 50, 100, 200]"
-                                 data-height="300" id="utable"
-                                 data-toolbar="#toolbar">
-                              <thead>
-                              <tr>
-                                  <th data-field="state" data-checkbox="true"></th>
-                                  <th data-field="id" data-align="right" data-sortable="true">序列</th>
-                                  <th data-field="name" data-align="center" data-sortable="true">用户名称</th>
-                                  <th data-field="price" data-sortable="true">真实姓名</th>
-                                  <th data-field="price" data-sortable="true">联系电话</th>
-                                  <th data-field="price" data-sortable="true">用户角色</th>
-                                  <th data-field="price" data-sortable="true">所属区域</th>
-                                  <th data-field="price" data-sortable="true">创建时间</th>
-                                  <th data-field="price" data-sortable="true">创建人</th>
-                                  <th data-field="operate" data-sortable="true" data-formatter="operateFormatter"
-                                      data-events="operateEvents">操作</th>
-                              </tr>
-                              </thead>
-                          </table>
-                      <!--</div>-->
-                  </div>
-             </div>
+        <div class="head-top">
+            <div class="width10 c-header c-dblue d-col2">新增目录</div>
+            <div class="width10 c-header c-dblue d-col2">上传文件</div>
+            <div class="width10 c-header c-white">选择目录</div>
+            <select class="width10 c-header c-white">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <div class="width10 c-header c-green">文件名查询</div>
+            <div class="width10 c-header c-white"></div>
         </div>
+        <div class="head-bottom">
+            <div class="width10 c-header c-red " style="visibility: hidden;"></div>
+            <div class="width10 c-header c-red " style="visibility: hidden;"></div>
+
+            <div class="width10 c-header c-yellow">日期查询</div>
+            <div class="width10 c-header c-white"></div>
+            <div class="width10 c-header c-white"></div>
+            <!--<select class="width10 c-header c-white">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>-->
+        </div>
+        <!-- <div class="head-top">
+                <div class="bg_ls span2 c-header d-col2"> <a href="#">新增目录 </a> </div>
+                <div class="bg_lg span2 c-header d-col2"> <a href="#">上传文件</a> </div>
+                <div class="span6">
+                    <div class=" span1 c-header"> <a href="#">上传文件</a> </div>
+                    <div class="span1 c-header"> <a href="#">上传文件</a> </div>
+                    <div class=" span1 c-header"> <a href="#">上传文件</a> </div>
+                    <div class=" span1 c-header"> <a href="#">上传文件</a> </div>
+                    <div class=" span1 c-header"> <a href="#">上传文件</a> </div>
+                </div>
+
+            &lt;!&ndash;<ul class="">
+                <li class="pull-left"></li>
+                <li class="bg_ls width15 c-header d-col2"" > <a href="#">新增目录 </a> </li>
+                <li class="bg_lg width15 c-header d-col2"> <a href="#">上传文件</a> </li>
+                <li class="bg_ly width55">
+                    <div class="margin10px" style="display: inline;">
+                    <div class="width15 c-header c-yellow">选择目录</div>
+                    <div class="width15 c-header c-white"></div>
+                    <div class="width15 c-header c-yellow">文件名查询</div>
+                    <div class="width15 c-header c-white"></div>
+                    </div>
+                    <div class="width15 c-header c-yellow">选择目录</div>
+                    <div class="width15 c-header c-white"></div>
+                    <div class="width15 c-header c-yellow">文件名查询</div>
+                    <div class="width15 c-header c-white"></div>
+
+                </li>
+            </ul>&ndash;&gt;
+            &lt;!&ndash;<div class="width10 s-header c-dblue" style="height: ">跟进状态</div>
+            <select class="width10 c-header c-white">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <div class="width10 c-header c-yellow">录入时间</div>
+            <div class="width10 c-header c-white"></div>
+            <div class="width10 c-header c-white"></div>
+            <div class="width10 c-header c-dblue">店铺名称</div>
+            <div class="width10 c-header c-white"></div>
+            &lt;!&ndash;<select class="width10 c-header c-white">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>&ndash;&gt;&ndash;&gt;
+        </div>-->
+        <!--
+          <div class="head-bottom">
+              <div class="width10 c-header c-green">未跟进时间</div>
+              <select class="width10 c-header c-white">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+              </select>
+              <div class="width10 c-header c-lblue">店铺数量</div>
+              <div class="width10 c-header c-white"></div>
+              <div class="width10 c-header c-white"></div>
+              <div class="width10 c-header c-green">店铺定位</div>
+              <div class="width10 c-header c-white"></div>
+          </div>-->
+        <div class="sale-search">
+            <i class="icon-search"></i>
+            <span>搜索</span>
+        </div>
+        <hr>
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="widget-box">
+                        <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
+                            <h5>用户列表</h5>
+                        </div>
+                        <!--<div class="widget-content nopadding">-->
+                        <!--bootstrap table toolbar-->
+                        <div id="toolbar" class="btn-group">
+                            <button type="button" class="btn btn-default">
+                                <i class="icon-refresh">刷新</i>
+                            </button>
+                            <button type="button" class="btn btn-default">
+                                <i class=" icon-plus">新增</i>
+                            </button>
+                            <button type="button" class="btn btn-default">
+                                <i class=" icon-trash">删除</i>
+                            </button>
+
+                        </div>
+                        <!--bootstrap table-->
+                        <!--data-url="http://mikepenz.com/jsfiddle/" data-show-refresh="true"-->
+                        <table data-toggle="table"
+                               data-url="http://mikepenz.com/jsfiddle/"
+                               data-search="true"
+                               data-pagination="true"
+                               data-side-pagination="server"
+                               data-page-list="[5, 10, 20, 50, 100, 200]"
+                               data-height="300" id="utable"
+                               data-toolbar="#toolbar">
+                            <thead>
+                            <tr>
+                                <th data-field="state" data-checkbox="true"></th>
+                                <th data-field="id" data-align="right">目录类别</th>
+                                <th data-field="name" data-align="center">文件名</th>
+                                <th data-field="price" >文件大小</th>
+                                <th data-field="price" >创建人</th>
+                                <th data-field="price" >文件说明</th>
+                                <th data-field="price" >上传时间</th>
+                                <th data-field="price" >下载次数</th>
+                                <th data-field="operate" data-formatter="operateFormatter"
+                                    data-events="operateEvents">操作</th>
+                            </tr>
+                            </thead>
+                        </table>
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
-
+</div>
+</div>
 
       <!--Footer-part-->
 <div class="row-fluid">
