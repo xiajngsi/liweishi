@@ -17,7 +17,7 @@ lead: Welcome to my blog!
         <h3>客户查询</h3>
         <div class="head-top">
         <div class="width10 c-header c-dblue">注册日期查询</div>
-        <div class="width10 c-header c-white"></div>---
+        <div class="width10 c-header c-white"></div>
         <div class="width10 c-header c-white"></div>
         <div class="width10 c-header " style="visibility: hidden;"></div>
         <div class="width10 c-header c-green">按区域查询</div>
@@ -72,246 +72,44 @@ lead: Welcome to my blog!
 
                     </div>
                     <div class="widget-content nopadding">
-                        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
+                        <div id="toolbar" class="btn-group">
+                            <button type="button" class="btn btn-default">
+                                <i class="icon-refresh">刷新</i>
+                            </button>
+                            <button type="button" class="btn btn-default">
+                                <i class=" icon-plus">新增</i>
+                            </button>
+                            <button type="button" class="btn btn-default">
+                                <i class=" icon-trash">删除</i>
+                            </button>
 
-                            <div class="toolbar">
-                                <a class="toolbar-btn" href="#">
-                                    <span class="icon-refresh"></span>
-                                </a>
-                                <a class="toolbar-btn" href="#">
-                                    <span class="icon-plus"></span>
-                                    <span class="text">新建</span>
-                                </a>
-                                <a class="toolbar-btn" href="#">
-                                    <span class=" icon-remove"></span>
-                                    <span class="text">删除</span>
-                                </a>
-                                <div class="toolbar-search">
-                                    <input type="search" placeholder="按用户特征搜索 " id="toolbar-searchinput">
-                                </div>
-                                <div class="pagination">
-                                    <span class="per-page">每页显示：&nbsp;</span>
-                                    <div class="select-con">
-                                        <select class="dropdown-select" name="limit">
-                                            <option value="10" selected="">10</option>
-                                            <option value="20">20</option>
-                                            <option value="50">50</option>
-                                            <option value="100">100</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-
-
-                        <table class="table table-bordered data-table dataTable" id="DataTables_Table_0">
+                        <!--bootstrap table-->
+                        <!--data-url="http://mikepenz.com/jsfiddle/" data-show-refresh="true"-->
+                        <table data-toggle="table"
+                               data-url="http://mikepenz.com/jsfiddle/"
+                               data-search="true"
+                               data-pagination="true"
+                               data-side-pagination="server"
+                               data-page-list="[5, 10, 20, 50, 100, 200]"
+                               data-height="300" id="utable"
+                               data-toolbar="#toolbar">
                             <thead>
-                            <tr role="row">
-                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-sort="ascending"
-                                    aria-label="Rendering engine: activate to sort column descending"
-                                    style="width: 214px;">
-                                    <div class="DataTables_sort_wrapper">注册时间<span
-                                            class="DataTables_sort_icon css_right ui-icon ui-icon-triangle-1-n"></span>
-                                    </div>
-                                </th>
-                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-label="Browser: activate to sort column ascending"
-                                    style="width: 304px;">
-                                    <div class="DataTables_sort_wrapper">机构识别号<span
-                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                    </div>
-                                </th>
-                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-label="Platform(s): activate to sort column ascending"
-                                    style="width: 293px;">
-                                    <div class="DataTables_sort_wrapper">公司名称<span
-                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                    </div>
-                                </th>
-                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-label="Engine version: activate to sort column ascending"
-                                    style="width: 192px;">
-                                    <div class="DataTables_sort_wrapper">品牌名称<span
-                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                    </div>
-                                </th>
-                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-label="Engine version: activate to sort column ascending"
-                                    style="width: 192px;">
-                                    <div class="DataTables_sort_wrapper">店铺名称<span
-                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                    </div>
-                                </th>
-                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-label="Engine version: activate to sort column ascending"
-                                    style="width: 192px;">
-                                    <div class="DataTables_sort_wrapper">负责人<span
-                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                    </div>
-                                </th>
-                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-label="Engine version: activate to sort column ascending"
-                                    style="width: 192px;">
-                                    <div class="DataTables_sort_wrapper">手机号码<span
-                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                    </div>
-                                </th>
-                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-label="Engine version: activate to sort column ascending"
-                                    style="width: 192px;">
-                                    <div class="DataTables_sort_wrapper">销售专员<span
-                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                    </div>
-                                </th>
-                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-label="Engine version: activate to sort column ascending"
-                                    style="width: 192px;">
-                                    <div class="DataTables_sort_wrapper">服务专员<span
-                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                    </div>
-                                </th>
-                                <th class="ui-state-default" role="columnheader" tabindex="0"
-                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-label="Engine version: activate to sort column ascending"
-                                    style="width: 192px;">
-                                    <div class="DataTables_sort_wrapper">操作<span
-                                            class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
-                                    </div>
-                                </th>
+                            <tr>
+                                <th data-field="state" data-checkbox="true"></th>
+                                <th data-field="id" data-align="right" data-sortable="true">序列</th>
+                                <th data-field="name" data-align="center" data-sortable="true">用户名称</th>
+                                <th data-field="price" data-sortable="true">真实姓名</th>
+                                <th data-field="price" data-sortable="true">联系电话</th>
+                                <th data-field="price" data-sortable="true">用户角色</th>
+                                <th data-field="price" data-sortable="true">所属区域</th>
+                                <th data-field="price" data-sortable="true">创建时间</th>
+                                <th data-field="price" data-sortable="true">创建人</th>
+                                <th data-field="operate" data-sortable="true" data-formatter="operateFormatter"
+                                    data-events="operateEvents">操作</th>
                             </tr>
                             </thead>
-
-                            <tbody role="alert" aria-live="polite" aria-relevant="all">
-                            <tr class="gradeA odd">
-                                <td class=" sorting_1">2014-05-05</td>
-                                <td class=" ">20000063</td>
-                                <td class=" ">单店</td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center ">停用</td>
-                                <td class="center ">未付费</td>
-                                <td class="center ">
-                                    <a href="user-modification.html"><i class="icon icon-pencil"></i></a>
-                                    <a href="">详细</a>
-                                </td>
-                            </tr>
-                            <tr class="gradeA even">
-                                <td class=" sorting_1">2014-05-05</td>
-                                <td class=" ">20000063</td>
-                                <td class=" ">单店</td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center ">停用</td>
-                                <td class="center ">未付费</td>
-                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                            </tr>
-                            <tr class="gradeA odd">
-                                <td class=" sorting_1">2014-05-05</td>
-                                <td class=" ">20000063</td>
-                                <td class=" ">单店</td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center ">停用</td>
-                                <td class="center ">未付费</td>
-                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                            </tr>
-                            <tr class="gradeA even">
-                                <td class=" sorting_1">2014-05-05</td>
-                                <td class=" ">20000063</td>
-                                <td class=" ">单店</td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center ">停用</td>
-                                <td class="center ">未付费</td>
-                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                            </tr>
-                            <tr class="gradeA odd">
-                                <td class=" sorting_1">2014-05-05</td>
-                                <td class=" ">20000063</td>
-                                <td class=" ">单店</td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center ">停用</td>
-                                <td class="center ">未付费</td>
-                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                            </tr>
-                            <tr class="gradeA even">
-                                <td class=" sorting_1">2014-05-05</td>
-                                <td class=" ">20000063</td>
-                                <td class=" ">单店</td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center ">停用</td>
-                                <td class="center ">未付费</td>
-                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                            </tr>
-                            <tr class="gradeA odd">
-                                <td class=" sorting_1">2014-05-05</td>
-                                <td class=" ">20000063</td>
-                                <td class=" ">单店</td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center ">停用</td>
-                                <td class="center ">未付费</td>
-                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                            </tr>
-                            <tr class="gradeA even">
-                                <td class=" sorting_1">2014-05-05</td>
-                                <td class=" ">20000063</td>
-                                <td class=" ">单店</td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center "></td>
-                                <td class="center ">停用</td>
-                                <td class="center ">未付费</td>
-                                <td class="center "><a href="user-modification.html"><i class="icon icon-pencil"></i></a></td>
-                            </tr>
-                            </tbody>
                         </table>
-                        <div class="fg-toolbar ui-toolbar ui-widget-header ui-corner-bl ui-corner-br ui-helper-clearfix">
-                            <div class="dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi ui-buttonset-multi paging_full_numbers"
-                                 id="DataTables_Table_0_paginate">
-                                <a tabindex="0"
-                                   class="first ui-corner-tl ui-corner-bl fg-button ui-button ui-state-default ui-state-disabled"
-                                   id="DataTables_Table_0_first">第一页</a>
-                                <a tabindex="0"
-                                   class="previous fg-button ui-button ui-state-default ui-state-disabled"
-                                   id="DataTables_Table_0_previous">前一页</a><span>
-                                        <a tabindex="0" class="fg-button ui-button ui-state-default ui-state-disabled">1</a><a
-                                    tabindex="0" class="fg-button ui-button ui-state-default">2</a>
-                                        <a tabindex="0" class="fg-button ui-button ui-state-default">3</a><a tabindex="0"
-                                                                                                             class="fg-button ui-button ui-state-default">4</a><a
-                                    tabindex="0" class="fg-button ui-button ui-state-default">5</a></span>
-                                <a tabindex="0" class="next fg-button ui-button ui-state-default"
-                                   id="DataTables_Table_0_next">下一页</a>
-                                <a tabindex="0" class="last ui-corner-tr ui-corner-br fg-button ui-button ui-state-default" id="DataTables_Table_0_last">最后一页</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

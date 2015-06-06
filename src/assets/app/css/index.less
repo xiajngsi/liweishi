@@ -2,7 +2,7 @@
 @none-border: none;
 @list-height: 80px;
 @list-icon-font:45px;
-@list-font: 20px;
+@list-font: 10px;
 @red: #fd6960;
 @deepred: #da2436;
 @blue: #2356a2;
@@ -11,11 +11,23 @@
 @green: #28b878;
 @black: #000;
 @white: #fff;
+@margin-right10: 10px;
+@sidebar-font-size: 15px;
+@base-font-size: 13px;
+@body-color: #666;
+@big-radius: 7px;
+@small-radius: 3px;
 /*修改框架样式 登录界面*/
 /*html body{
   height: 100%;
   overflow: hidden;
 }*/
+#silebar .sidebar-ul li{
+  font-size: 15px;
+}
+.widget-content ul{
+  overflow: hidden;
+}
 #search {
   position: absolute;
   z-index: 25;
@@ -26,9 +38,10 @@ body {
   overflow-x: hidden;
   margin-top: -10px;
   font-family: Arial,'Microsoft YaHei','Open Sans', sans-serif;
-  font-size: 15px;
-  color: #666;
+  font-size: @base-font-size;
+  color: @body-color;
 }
+
 ul li{
   list-style: none;
 }
@@ -543,7 +556,7 @@ hr {
   border-bottom: 1px solid @white;
 }
 .widget-content{
-  height: 233px;
+  height: auto;
 }
 /*销售头部*/
 /*.s-header{
@@ -571,12 +584,21 @@ hr {
 }
 /*客情资料*/
 /*.activity-list */
-.gf15 {
+.gf{
   display: inline;
-  width: 15%;
+  width: 12%;
   margin: 4px 5px;
   float: left;
+  text-align: center;
 }
+.gf13 {
+  display: inline;
+  width: 13%;
+  margin: 4px 5px;
+  float: left;
+  text-align: center;
+}
+
 .birth-list{
   font-size: @list-font;
   text-align: center;
@@ -587,6 +609,12 @@ hr {
   height: @list-height;
   color: #d8504b;
 }
+.list-top span{
+  color: @black;
+}
+.list-bottom span{
+  color: @black;
+}
 .list-bottom{
   &:extend(.birth-list);
   height: @list-height;
@@ -594,7 +622,7 @@ hr {
 }
 .list-icon{
   font-size: @list-icon-font;
-  margin-right: 20px;
+  margin-right: @margin-right10;
 }
 .list-top .icon{
   &:extend(.list-icon);
@@ -611,6 +639,9 @@ hr {
 .festival{
   float: left;
   margin-right: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 18px;
 }
 .state{
   display: inline;
@@ -630,4 +661,59 @@ hr {
 .stateline4{
   &:extend(.state);
 }
+/*节日提醒*/
+.differ-day{
+  font-size: @base-font-size;
+  line-height: inherit;
+}
+.list-top span{
+  line-height: 40px;
+}
+.list-bottom span{
+  line-height: 40px;
+}
+.font-weight{
+  font-weight: 700;
+  font-size: 17.5px;
+}
+.client-information-line{
 
+}
+.line8(@color){
+  border-radius: @big-radius;
+  background-color: @color;
+  text-align: center;
+}
+.today{
+  .line8(@red);
+}
+.yesterday{
+  .line8(@yellow);
+}
+.byesterday{
+  .line8(@green);
+}
+.other-day{
+  .line8(@lightblue);
+}
+/*
+.alter{
+  text-align: center;
+}
+*/
+.span4 .span12{
+  margin: 0px;
+}
+.normal-font{
+  float: left;
+  margin-top: 14px;
+}
+.list-top .differ-day{
+  color: @red;
+}
+.list-bottom .differ-day{
+   color: @blue;
+ }
+.list-bottom .festival{
+   color: @blue;
+ }
