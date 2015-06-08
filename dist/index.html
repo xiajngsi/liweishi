@@ -139,19 +139,25 @@
     </ul>
 </div>
 
-      
-<div id="content">
-    <div id="content-header">
-        <div id="breadcrumb"> <a href="index.html" title="主页" class="tip-bottom"><i class="icon-home"></i> 首页看板</a></div>
+      <div id="content">
+  <div id="content-header">
+    <div id="breadcrumb">
+        <a href="index.html" class="tip-bottom" data-original-title="主页">
+            <i class="icon-home"></i>首页看板
+        </a>
+        <a href="" class="tip-bottom" data-original-title=""></a>
+        <a href="#" class="current"></a>
     </div>
+</div>
+
 
     <div class="container-fluid">
       <div  class="quick-actions_homepage">
           <ul class="quick-actions">
-              <li class="bg_lb quick-width1"> <a href="user-nation.html"> <i class="iconfont icon-user_add"></i> <span class="label label-important">20</span>新增用户 </a> </li>
-              <li class="bg_lg quick-width2"> <a href="#"> <i class="iconfont icon-gengxinpaiming"></i>销售区域排名</a> </li>
-              <li class="bg_ly quick-width1"> <a href="#"> <i class="iconfont icon-jiangpai"></i>个人销售排名</a> </li>
-              <li class="bg_lo quick-width1"> <a href="#"> <i class="iconfont icon-qudaoguanli"></i><span class="label label-important">3</span> 新增渠道商 </a> </li>
+              <li class="bg_lb quick-width1"> <a href="addedclient.html"> <i class="iconfont icon-user_add"></i> <span class="label label-important">20</span>新增用户 </a> </li>
+              <li class="bg_lg quick-width2"> <a href="regrank.html"> <i class="iconfont icon-gengxinpaiming"></i>销售区域排名</a> </li>
+              <li class="bg_ly quick-width1"> <a href="persrank.html"> <i class="iconfont icon-jiangpai"></i>个人销售排名</a> </li>
+              <li class="bg_lo quick-width1"> <a href="addedchannel.html"> <i class="iconfont icon-qudaoguanli"></i><span class="label label-important">3</span> 新增渠道商 </a> </li>
               <li class="bg_ls quick-width2"> <a href="#"> <i class="iconfont icon-dianzan"></i><span class="label label-important">3</span> 激励表彰</a> </li>
           </ul>
       </div>
@@ -221,6 +227,7 @@
       <script src="assets/js/matrix.tables.js"></script>
       <script src="assets/app/js/index.js"></script>
       <script src="assets/js/matrix.chat.js"></script>
+      <script src="assets/js/bootstrap-datepicker.js"></script>
       <!--Bootrap-table-->
       <script src="assets/bootstrap-table/bootstrap-table.js" type="text/javascript"></script>
       <!--支持中文bootstap-table-->
@@ -250,11 +257,19 @@
               document.gomenu.selector.selectedIndex = 2;
           }
       </script>
+      <!--bootstrap相关表格加载js-->
       <script>
           $('#utable').bootstrapTable({
           });
           $('#stable').bootstrapTable({
           });
+          $('#channeltable').bootstrapTable({
+          });
+          $('#addedchannaltable').bootstrapTable({
+          });
+          $('#salestable').bootstrapTable({
+          });
+
           function operateFormatter(value, row, index) {
               return [
                   '<a class="like" href="user-modification.html" title="Like">修改</a> ',

@@ -139,16 +139,20 @@
     </ul>
 </div>
 
-      <div id="content">
+      
+
+<div id="content">
     <div id="content-header">
-        <div id="breadcrumb">
-            <a href="index.html" class="tip-bottom" data-original-title="Go to Home">
-                <i class="icon-home"></i>首页看板
-            </a>
-            <a href="#" class="tip-bottom" data-original-title="">内部交流</a>
-            <a href="#" class="current">资料下载</a>
-        </div>
+    <div id="breadcrumb">
+        <a href="index.html" class="tip-bottom" data-original-title="主页">
+            <i class="icon-home"></i>首页看板
+        </a>
+        <a href="" class="tip-bottom" data-original-title="内部交流">内部交流</a>
+        <a href="#" class="current">资料下载</a>
     </div>
+</div>
+
+
     <div class="container-fluid">
         <h3>销售线索</h3>
 
@@ -336,6 +340,7 @@
       <script src="assets/js/matrix.tables.js"></script>
       <script src="assets/app/js/index.js"></script>
       <script src="assets/js/matrix.chat.js"></script>
+      <script src="assets/js/bootstrap-datepicker.js"></script>
       <!--Bootrap-table-->
       <script src="assets/bootstrap-table/bootstrap-table.js" type="text/javascript"></script>
       <!--支持中文bootstap-table-->
@@ -365,11 +370,19 @@
               document.gomenu.selector.selectedIndex = 2;
           }
       </script>
+      <!--bootstrap相关表格加载js-->
       <script>
           $('#utable').bootstrapTable({
           });
           $('#stable').bootstrapTable({
           });
+          $('#channeltable').bootstrapTable({
+          });
+          $('#addedchannaltable').bootstrapTable({
+          });
+          $('#salestable').bootstrapTable({
+          });
+
           function operateFormatter(value, row, index) {
               return [
                   '<a class="like" href="user-modification.html" title="Like">修改</a> ',

@@ -555,9 +555,9 @@ hr {
   border-top: 1px solid #eee;
   border-bottom: 1px solid @white;
 }
-.widget-content{
-  height: auto;
-}
+.widget-content {
+   margin-top: 10px;
+ }
 /*销售头部*/
 /*.s-header{
   height：
@@ -585,7 +585,6 @@ hr {
 /*客情资料*/
 /*.activity-list */
 .gf{
-  display: inline;
   width: 12%;
   margin: 4px 5px;
   float: left;
@@ -717,3 +716,19 @@ hr {
 .list-bottom .festival{
    color: @blue;
  }
+/*决绝模态框父元素为撑开的bug*/
+/*.widget-content{
+  overflow: hidden;
+}*/
+.control-group{
+  overflow: hidden;
+}
+/*模态框的定义*/
+.modal .control-group .span3{
+  padding-left: 30px;
+}
+/*中等宽度进度条*/
+.progress-middle{
+
+}
+

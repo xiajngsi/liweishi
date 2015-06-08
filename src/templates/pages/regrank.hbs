@@ -1,0 +1,164 @@
+---
+current: 全国区域排名
+---
+<div id="content">
+    {{> content-header }}
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="widget-box">
+                    <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
+                        <h5>本月区域开户汇总</h5>
+                    </div>
+                    <table data-toggle="table"
+                           data-url="http://mikepenz.com/jsfiddle/"
+                           data-search="true"
+                           data-pagination="true"
+                           data-side-pagination="server"
+                           data-page-list="[5, 10, 20, 50, 100, 200]"
+                           data-height="300" id="utable"
+                           data-toolbar="#toolbar">
+                        <thead>
+                        <tr>
+                            <th data-field="state" data-checkbox="true"></th>
+                            <th data-field="id" data-align="right" >省份</th>
+                            <th data-field="name" data-align="center">城市</th>
+                            <th data-field="price" data-sortable="true">本月店数</th>
+                            <th data-field="price" data-sortable="true">连锁店</th>
+                            <th data-field="price" data-sortable="true">单店</th>
+                        </tr>
+                        </thead>
+                    </table>
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span6">
+                    <div class="widget-box">
+                    <div class="widget-title"> <span class="icon"> <i class="icon-list"></i> </span>
+                        <h5>省份前10名</h5>
+                    </div>
+                    <div class="widget-content">
+                        <ul class="unstyled">
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 广东省 <span class="pull-right strong">567</span>
+                                <div class="progress progress-warning">
+                                    <div style="width: 81%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 广西省 <span class="pull-right strong">507</span>
+                                <div class="progress progress-warning ">
+                                    <div style="width: 72%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-down-2 red"></span> 湖北省 <span class="pull-right strong">457</span>
+                                <div class="progress progress-warning ">
+                                    <div style="width: 53%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 湖南省 <span class="pull-right strong">8</span>
+                                <div class="progress  progress-warning">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 浙江省 <span class="pull-right strong">8</span>
+                                <div class="progress progress-warning ">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 云南省 <span class="pull-right strong">8</span>
+                                <div class="progress progress-warning ">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 四川省 <span class="pull-right strong">8</span>
+                                <div class="progress progress-warning ">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 重庆省 <span class="pull-right strong">8</span>
+                                <div class="progress progress-warning ">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 江苏省 <span class="pull-right strong">8</span>
+                                <div class="progress progress-warning ">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 上海省 <span class="pull-right strong">8</span>
+                                <div class="progress progress-warning ">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="span6">
+                <div class="widget-box">
+                    <div class="widget-title"> <span class="icon"> <i class="icon-list"></i> </span>
+                        <h5>城市前10名</h5>
+                    </div>
+                    <div class="widget-content">
+                        <ul class="unstyled">
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 广东省 <span class="pull-right strong">567</span>
+                                <div class="progress progress-info ">
+                                    <div style="width: 81%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 广西省 <span class="pull-right strong">507</span>
+                                <div class="progress progress-info ">
+                                    <div style="width: 72%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-down-2 red"></span> 湖北省 <span class="pull-right strong">457</span>
+                                <div class="progress progress-info ">
+                                    <div style="width: 53%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 湖南省 <span class="pull-right strong">8</span>
+                                <div class="progress progress-info ">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 浙江省 <span class="pull-right strong">8</span>
+                                <div class="progress progress-info ">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 云南省 <span class="pull-right strong">8</span>
+                                <div class="progress progress-info ">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 四川省 <span class="pull-right strong">8</span>
+                                <div class="progress progress-info ">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 重庆省 <span class="pull-right strong">8</span>
+                                <div class="progress progress-info ">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 江苏省 <span class="pull-right strong">8</span>
+                                <div class="progress progress-info ">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 上海省 <span class="pull-right strong">8</span>
+                                <div class="progress progress-info ">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
