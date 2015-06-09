@@ -17,7 +17,7 @@
 <div id="header">
   <h1><a href="dashboard.html">Matrix Admin</a></h1>
 </div>
-<!--close-Header-part--> 
+<!--close-Header-part-->
 
 <!--top-Header-menu-->
 <div id="user-nav" class="navbar navbar-inverse">
@@ -52,7 +52,7 @@
   <input type="text" placeholder="Search here..."/>
   <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
 </div>
-<!--close-top-serch--> 
+<!--close-top-serch-->
 
 <!--sidebar-menu-->
 
@@ -215,14 +215,14 @@
   <div id="footer" class="span12"> 2013 &copy; Matrix Admin. More Templates <a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
 </div>
 <!--end-Footer-part-->
-<script src="js/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.flot.min.js"></script> 
-<script src="js/jquery.flot.pie.min.js"></script> 
-<script src="js/matrix.charts.js"></script> 
-<script src="js/jquery.flot.resize.min.js"></script> 
-<script src="js/matrix.js"></script> 
-<script src="js/jquery.peity.min.js"></script> 
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flot.min.js"></script>
+<script src="js/jquery.flot.pie.min.js"></script>
+<script src="js/matrix.charts.js"></script>
+<script src="js/jquery.flot.resize.min.js"></script>
+<script src="js/matrix.js"></script>
+<script src="js/jquery.peity.min.js"></script>
 <!--Real-time-chart-js-->
 <script type="text/javascript">
 $(function () {
@@ -277,13 +277,13 @@ $(function () {
         plot.setData([ getRandomData() ]);
         // since the axes don't change, we don't need to call plot.setupGrid()
         plot.draw();
-        
+
         setTimeout(update, updateInterval);
     }
 
     update();
 });
-</script> 
+</script>
 <!--Real-time-chart-js-end-->
 <!--Turning-series-chart-js-->
 <script type="text/javascript">
@@ -292,7 +292,7 @@ $(function () {
         "usa": {
             label: "USA",
             data: [[1988, 483994], [1989, 479060], [1990, 457648], [1991, 401949], [1992, 424705], [1993, 402375], [1994, 377867], [1995, 357382], [1996, 337946], [1997, 336185], [1998, 328611], [1999, 329421], [2000, 342172], [2001, 344932], [2002, 387303], [2003, 440813], [2004, 480451], [2005, 504638], [2006, 528692]]
-        },        
+        },
         "russia": {
             label: "Russia",
             data: [[1988, 218000], [1989, 203000], [1990, 171000], [1992, 42500], [1993, 37600], [1994, 36600], [1995, 21700], [1996, 19200], [1997, 21300], [1998, 13600], [1999, 14000], [2000, 19100], [2001, 21300], [2002, 23600], [2003, 25100], [2004, 26100], [2005, 31100], [2006, 34700]]
@@ -326,8 +326,8 @@ $(function () {
         val.color = i;
         ++i;
     });
-    
-    // insert checkboxes 
+
+    // insert checkboxes
     var choiceContainer = $("#choices");
     $.each(datasets, function(key, val) {
         choiceContainer.append('<br/><input type="checkbox" name="' + key +
@@ -337,7 +337,7 @@ $(function () {
     });
     choiceContainer.find("input").click(plotAccordingToChoices);
 
-    
+
     function plotAccordingToChoices() {
         var data = [];
 
@@ -356,8 +356,9 @@ $(function () {
 
     plotAccordingToChoices();
 });
-</script> 
+</script>
 <!--Turning-series-chart-js-->
 <script src="js/matrix.dashboard.js"></script>
+
 </body>
 </html>
