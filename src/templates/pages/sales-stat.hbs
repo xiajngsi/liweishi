@@ -6,17 +6,8 @@ current: 销售统计
 <div id="content">
   {{> content-header }}
     <div class="container-fluid">
-        <div class="quick-actions_homepage">
-            <ul class="quick-actions t-menu">
-                <li class="bg_lb"> <a href="sales-stat.html">平台销售统计</a> </li>
-                <li class="bg_lg"> <a href="version-stat.html">版本销售统计</a></li>
-                <li class="bg_ly"> <a href="reg-stat.html"> 区域销售统计 </a> </li>
-                <li class="bg_ly"> <a href="shop-stat.html"> 商品销售统计 </a> </li>
-                <li class="bg_lo"> <a href="year-stat.html">年度汇总统计</a></li>
-            </ul>
-        </div>
+      {{> sales-top }}
 
-        <hr>
         <div class="row-fluid">
             <div class="span12">
                 <div class="widget-box">
@@ -30,7 +21,7 @@ current: 销售统计
                                data-pagination="true"
                                data-side-pagination="server"
                                data-page-list="[5, 10, 20, 50, 100, 200]"
-                               data-height="370" id="salestable"
+                               data-height="490" id="salestable"
                                data-toolbar="#toolbar">
                             <thead>
                             <tr>
@@ -58,8 +49,7 @@ current: 销售统计
                     <h5>平台销售走势图</h5>
                 </div>
                 <div class="widget-content">
-                    <div id="placeholder"></div>
-                    <p id="choices"></p>
+                    <p id="platSaleChat"></p>
                 </div>
             </div>
         </div>
@@ -72,7 +62,7 @@ current: 销售统计
                         <h5>6月平台数量分析图</h5>
                     </div>
                     <div class="widget-content">
-                        <div class="pie"></div>
+                        <div id="platAnalysisChat"></div>
                     </div>
                 </div>
             </div>
@@ -82,7 +72,7 @@ current: 销售统计
                         <h5>销量图</h5>
                     </div>
                     <div class="widget-content">
-                        <div class="bars"></div>
+                        <div id="salesVolumeChar"></div>
                     </div>
                 </div>
             </div>

@@ -1,36 +1,46 @@
 ---
-tip-bottom: 销售管理
-current: 销售统计
+current: 年度汇总统计
 ---
 
 <div id="content">
   {{> content-header }}
     <div class="container-fluid">
-
-        {{> sales-top }}
+      {{> sales-top }}
 
         <div class="row-fluid">
             <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
                         <h5>用户列表</h5>
-                        <div class="pull-right">共100项总金额1000元</div>
+                        <select name="" id="" class="table-top-select">
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                        </select>
+                        <div class="pull-right statistic">共100项总金额1000元</div>
                     </div>
                     <table data-toggle="table"
                            data-url="http://mikepenz.com/jsfiddle/"
-                           data-search="true"
-                           data-pagination="true"
                            data-side-pagination="server"
                            data-page-list="[5, 10, 20, 50, 100, 200]"
                            data-height="490" id="salestable"
                            data-toolbar="#toolbar">
                         <thead>
                         <tr>
-                            <th data-field="state" data-checkbox="true"></th>
-                            <th data-field="id" >日期</th>
-                            <th data-field="name">版本</th>
-                            <th data-field="price" >数量</th>
+                            <th data-field="id" >年度</th>
+                            <th data-field="name">月份</th>
+                            <th data-field="price" >单店数量</th>
                             <th data-field="name">金额</th>
+                            <th data-field="name">总部数量</th>
+                            <th data-field="name">金额</th>
+                            <th data-field="name">分店数量</th>
+                            <th data-field="name">金额</th>
+                            <th data-field="name">短信数量</th>
+                            <th data-field="name">金额</th>
+                            <th data-field="name">商品数量</th>
+                            <th data-field="name">金额</th>
+                            <th data-field="name">合计金额</th>
                         </tr>
                         </thead>
                     </table>

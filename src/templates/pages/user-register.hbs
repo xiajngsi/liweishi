@@ -11,7 +11,7 @@ current: 新增用户
     <div class="container-fluid">
         <hr>
         <div class="row-fluid">
-            <div class="span6">
+            <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
                         <h5>账号注册</h5>
@@ -34,9 +34,10 @@ current: 新增用户
                                 <div class="span6">
                                     <label for="normal" class="control-label">客户属性: </label>
                                     <div class="controls">
-                                        <select name="" id="" class="span11">
+                                        <select name="" id="" class="span11 client-attribute">
                                             <option value="单店">单店</option>
                                             <option value="连锁店">连锁店</option>
+                                            <option value="连锁店">分店</option>
                                         </select>
                                     </div>
                                 </div>
@@ -48,6 +49,22 @@ current: 新增用户
                                     <input type="text" class="span11"/>
                                 </div>
                             </div>
+
+                            <div class="control-group">
+                                <div class="span6">
+                                    <label for="normal" class="control-label">品牌名称: </label>
+                                    <div class="controls">
+                                        <input type="text" class="span11"/>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <label for="normal" class="control-label">店铺名称: </label>
+                                    <div class="controls">
+                                        <input type="text" class="span11"/>
+                                    </div>
+                                </div>
+                            </div>
+
 
                             <div class="control-group">
                                 <label for="normal" class="control-label">选择区域</label>
@@ -83,13 +100,6 @@ current: 新增用户
                             </div>
 
                             <div class="control-group">
-                                <label for="normal" class="control-label">公司名称: </label>
-                                <div class="controls">
-                                    <input type="text" class="span11"/>
-                                </div>
-
-                            </div>
-                            <div class="control-group">
                                 <label for="normal" class="control-label">公司/店铺地址: </label>
                                 <div class="controls">
                                     <input type="text" class="span11"/>
@@ -97,7 +107,7 @@ current: 新增用户
 
                             </div>
 
-                            <div class="control-group">
+                            <!--<div class="control-group">
                                 <label for="normal" class="control-label">店铺品牌: </label>
                                 <div class="controls">
                                     <input type="text" class="width15"/>
@@ -105,7 +115,7 @@ current: 新增用户
                                     <input type="text" class="width15"/>
                                     <input type="text" class="width15"/>
                                 </div>
-                            </div>
+                            </div>-->
 
                             <div class="control-group">
                                 <label for="normal" class="control-label">负责人姓名</label>
@@ -129,14 +139,12 @@ current: 新增用户
                                 </div>
                             </div>
 
-
-
-                            <div class="control-group">
+                            <!--<div class="control-group">
                                 <label for="normal" class="control-label">机构识别码: </label>
                                 <div class="controls">
                                     <input type="text" class="span11"/>
                                 </div>
-                            </div>
+                            </div>-->
 
                             <div class="control-group">
                                 <div class="span6">
@@ -187,151 +195,6 @@ current: 新增用户
                     </div>
                 </div>
             </div>
-
-            <div class="span6">
-                <div class="widget-box">
-                    <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                        <h5>分店注册</h5>
-                    </div>
-                    <div class="widget-content nopadding">
-                        <form action="#" class="form-horizontal">
-                            <div class="control-group">
-                                <div class="span6">
-                                    <label for="normal" class="control-label">机构识别码: </label>
-                                    <div class="controls">
-                                        <input type="text" class="span11">
-                                    </div>
-                                </div>
-                                <div class="span6">
-                                    <label for="normal" class="control-label">客户属性: </label>
-                                    <div class="controls">
-                                        <select name="" id="" class="span11">
-                                            <option value="单店">单店</option>
-                                            <option value="连锁店">连锁店</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="control-group">
-                                <label for="normal" class="control-label">选择区域</label>
-                                <div class="controls">
-                                    <div class="controls-x1">
-                                        <select class="width20">
-                                            <option value=""></option>
-                                            <option value=""></option>
-                                            <option value=""></option>
-                                            <option value=""></option>
-                                        </select>
-                                    </div>
-                                    省
-                                    <div class="controls-x3">
-                                        <select class="width20">
-                                            <option value=""></option>
-                                            <option value=""></option>
-                                            <option value=""></option>
-                                            <option value=""></option>
-                                        </select>
-                                    </div>
-                                    市
-                                    <div class="controls-x3">
-                                        <select class="width20">
-                                            <option value=""></option>
-                                            <option value=""></option>
-                                            <option value=""></option>
-                                            <option value=""></option>
-                                        </select>
-                                    </div>
-                                    区/县
-                                </div>
-                            </div>
-
-                            <div class="control-group">
-                                <label for="normal" class="control-label">分店地址: </label>
-                                <div class="controls">
-                                    <input type="text" class="span11"/>
-                                </div>
-                            </div>
-
-                            <div class="control-group">
-                                <label for="normal" class="control-label">分店名称: </label>
-                                <div class="controls">
-                                    <input type="text" class="span11"/>
-                                </div>
-                            </div>
-
-                            <div class="control-group">
-                                <label for="normal" class="control-label">负责人姓名</label>
-                                <div class="controls">
-                                    <div class="controls-x1">
-                                        <input type="text" class="width20"/>
-                                    </div>
-                                    职位
-                                    <div class="controls-x3">
-                                        <select class="width20">
-                                            <option value="老板">老板</option>
-                                            <option value="股东">股东</option>
-                                            <option value="高管">高管</option>
-                                            <option value="店长">店长</option>
-                                        </select>
-                                    </div>
-                                    手机号
-                                    <div class="controls-x3">
-                                        <input type="text" class="width20"/>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="control-group">
-                                <div class="span6">
-                                    <label for="normal" class="control-label">分店账号: </label>
-                                    <div class="controls">
-                                        <input type="text" class="span11"/>
-                                    </div>
-                                </div>
-                                <div class="span6">
-                                    <label for="normal" class="control-label">账号密码: </label>
-                                    <div class="controls">
-                                        <input type="text" class="span11"/>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="control-group">
-                                <label for="normal" class="control-label">账号期限</label>
-                                <div class="controls">
-                                    <div class="controls-x1">
-                                        <select class="width20">
-                                            <option value="30天">30天</option>
-                                            <option value="1年">1年</option>
-                                            <option value="2年">2年</option>
-                                            <option value="100年">100年</option>
-                                        </select>
-                                    </div>
-                                    付费状况
-                                    <div class="controls-x3">
-                                        <select class="width22">
-                                            <option value="未付费">未付费</option>
-                                            <option value="已付费">已付费</option>
-                                        </select>
-                                    </div>
-                                    金额
-                                    <div class="controls-x3">
-                                        <input type="text" class="width15"/>
-                                    </div>
-                                    区
-                                </div>
-                            </div>
-
-                            <div class="control-group">
-                                <button class="btn btn-success client-add-save" type="submit">保存并增加</button>
-                            </div>
-                            <spam class="count">已增加<span>5</span>家分店</spam>
-
-                        </form>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div></div>
+
