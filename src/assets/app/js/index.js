@@ -21,8 +21,24 @@ function goPage (newURL) {
 }
 
 /*表格加载*/
+/*$('#modUserTable').on('all.bs.table', function (e, name, args) {
+ console.log('Event:', name, ', data:', args);
+ });*/
+$('#modUserTable').bootstrapTable({
+
+});
+$('#userTable').bootstrapTable({
+
+});
 $('#utable').bootstrapTable({
 });
+function pencil(value, row, index) {
+  return [
+    '<a class="like" href="" title="Like"><i class="icon-pencil"></i></a> '/*,
+     '<a class="remove" href="javascript:void(0)" title="Remove">删除</a>',
+     '<a class="remove" href="user-detail.html" title="Remove">详情</a>',*/
+  ].join('');
+}
 $('#stable').bootstrapTable({
 });
 $('#channeltable').bootstrapTable({
@@ -32,13 +48,13 @@ $('#addedchannaltable').bootstrapTable({
 $('#salestable').bootstrapTable({
 });
 
-function operateFormatter(value, row, index) {
+/*function operateFormatter(value, row, index) {
   return [
-    '<a class="like" href="user-modification.html" title="Like">修改</a> '/*,
+    '<a class="like" href="user-modification.html" title="Like">修改</a> '*//*,
     '<a class="remove" href="javascript:void(0)" title="Remove">删除</a>',
-    '<a class="remove" href="user-detail.html" title="Remove">详情</a>',*/
+    '<a class="remove" href="user-detail.html" title="Remove">详情</a>',*//*
   ].join('');
-}
+}*/
 
 window.operateEvents = {
   'click .like': function (e, value, row, index) {

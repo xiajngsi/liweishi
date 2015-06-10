@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+</head>
+<body>
+<div class="menu">
+    <ul class="submenu">
+      <li>ss
+        <ul style="display: none;">
+          <li>w</li>
+          <li>e</li>
+          <li>r</li>
+        </ul>
+
+      </li>
+      <li>a</li>
+      <li>d</li>
+    </ul>
+</div>
+
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+  $(".menu").on("click",function(){
+   if($(".submenu").style.display = 'none') {
+     $(".submenu").style.display = 'block';
+   }else{
+     $(".submenu").style.display = 'none';
+   }
+  });
+
+</script>
+</body>
+</html>
