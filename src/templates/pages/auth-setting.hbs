@@ -1,0 +1,162 @@
+---
+current: 角色权限设置
+---
+<div id="content">
+  {{> content-header}}
+      <div class="container-fluid">
+          <div class="row-fluid">
+              <div class="span4">
+                  <div class="search permission-search">
+                      <input type="text" placeholder="项目类别/项目名称/价格" class="permission-input">
+                      <button type="submit" class="tip-bottom" data-original-title="Search"><i class="icon-search icon-white"></i></button>
+                  </div>
+
+                  <div class="widget-box">
+                      <div class="widget-title"> <span class="icon"> <i class="icon-list"></i> </span>
+                          <h5>已新增角色</h5>
+                      </div>
+                      <div class="widget-content">
+                          <div class="todo">
+                              <ul>
+                                  <li class="clearfix">
+                                      <div class="txt"> 超级管理员 <span class="date badge badge-important mgl10">权限设置</span> </div>
+                                      <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                  </li>
+                                  <li class="clearfix">
+                                      <div class="txt"> 高级管理员 <span class="date badge badge-warning mgl10">权限设置</span> </div>
+                                      <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                  </li>
+                                  <li class="clearfix">
+                                      <div class="txt"> 高级管理员 <span class="date badge badge-info mgl10">权限设置</span> </div>
+                                      <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                  </li>
+                                  <li class="clearfix">
+                                      <div class="txt"> 高级管理员 <span class="date badge badge-info mgl10">权限设置</span> </div>
+                                      <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                  </li>
+                                  <li class="clearfix">
+                                      <div class="txt"> 高级管理员 <span class="date badge badge-info mgl10">权限设置</span> </div>
+                                      <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                  </li>
+
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="span8">
+                  <div class="widget-box">
+                      <div class="widget-title"> <span class="icon"> <i class="icon-list"></i> </span>
+                          <h5>权限设置选项</h5>
+                      </div>
+                      <div class="widget-content nopadding ">
+                          <form class="form-horizontal permission-content">
+                              <div class="control-group ">
+                                  <label class="control-label">管理区域设置</label>
+                                  <div class="controls">
+                                      <select name="" id="" class="span3">
+                                          <option value="广东省">广东省</option>
+                                          <option value="湖南省">湖南省</option>
+                                          <option value="湖北省">湖北省</option>
+                                      </select>
+                                      <select name="" id="" class="span3">
+                                          <option value="深圳市">深圳市</option>
+                                          <option value="广州市">广州市</option>
+                                          <option value="珠海市">珠海市</option>
+                                      </select>
+                                      <select name="" id="" class="span3">
+                                          <option value="福田区">福田区</option>
+                                          <option value="南山区">南山区</option>
+                                          <option value="罗湖区">罗湖区</option>
+                                      </select>
+                                      <textarea name="" id="" cols="30" rows="3" class="mgt10 span9">
+                                      </textarea>
+                                  </div>
+                              </div>
+                              <div class="control-group">
+                                  <label class="control-label permission-label">客户管理设置</label>
+                                  <div class="controls">
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许修改公司和品牌信息
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许修改负责人信息
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许修改主账号和密码
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许修改账号使用状态
+                                      </label>
+                                  </div>
+                              </div>
+                              <div class="control-group">
+                                  <label class="control-label">销售管理设置</label>
+                                  <div class="controls">
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          不显示“充值重置”菜单项
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          不显示储值金额
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许对“销售项目”进行审核
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许修改账号使用状态
+                                      </label>
+                                  </div>
+                              </div>
+                              <div class="control-group">
+                                  <label class="control-label">内部交流设置</label>
+                                  <div class="controls">
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          不显示“发布公告”菜单项
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许“资料下载”中新增目录
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许“资料下载”修改、删除文件
+                                      </label>
+                                  </div>
+                              </div>
+                              <div class="control-group">
+                                  <label class="control-label" for="inputWarning">系统设置模块</label>
+                                  <div class="controls">
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          不显示“销售项目设置”菜单项
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          不显示“角色权限设置”菜单项
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          不显示“短信端口设置”菜单项
+                                      </label>
+                                  </div>
+                              </div>
+                              <input type="button" class="btn btn-info mg-right30 pull-right mgt10" value="保存"/>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+</div>
+{{> clientinfor }}
+

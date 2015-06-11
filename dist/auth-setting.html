@@ -3,9 +3,6 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
-      <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
-      <META HTTP-EQUIV="Expires" CONTENT="0">
       <title>后台管理</title>
       <link rel="image_src" type="image/jpeg" href="assets/app/img/t4.png">
       <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -13,8 +10,10 @@
       <link rel="stylesheet" href="assets/css/fullcalendar.css" />
       <link rel="stylesheet" href="assets/css/matrix-style.css" />
       <link rel="stylesheet" href="assets/css/matrix-media.css" />
+      <link rel="stylesheet" href="assets/css/uniform.css" />
       <link rel="stylesheet" href="assets/app/css/index.css" />
       <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
       <link rel="stylesheet" href="assets/font-awesome/css/iconfont.css"/>
       <link rel="stylesheet" href="assets/font-awesome/css/iconfont-index.css"/>
       <!-- Bootstrap-table-->
@@ -142,6 +141,435 @@
 </div>
 
       
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb">
+        <a href="index.html" class="tip-bottom" data-original-title="主页">
+            <i class="icon-home"></i>首页看板
+        </a>
+       <!-- <a href="" class="tip-bottom" data-original-title=""></a>-->
+        <a href="#" class="current">角色权限设置</a>
+    </div>
+</div>
+
+      <div class="container-fluid">
+          <div class="row-fluid">
+              <div class="span4">
+                  <div class="search permission-search">
+                      <input type="text" placeholder="项目类别/项目名称/价格" class="permission-input">
+                      <button type="submit" class="tip-bottom" data-original-title="Search"><i class="icon-search icon-white"></i></button>
+                  </div>
+
+                  <div class="widget-box">
+                      <div class="widget-title"> <span class="icon"> <i class="icon-list"></i> </span>
+                          <h5>已新增角色</h5>
+                      </div>
+                      <div class="widget-content">
+                          <div class="todo">
+                              <ul>
+                                  <li class="clearfix">
+                                      <div class="txt"> 超级管理员 <span class="date badge badge-important mgl10">权限设置</span> </div>
+                                      <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                  </li>
+                                  <li class="clearfix">
+                                      <div class="txt"> 高级管理员 <span class="date badge badge-warning mgl10">权限设置</span> </div>
+                                      <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                  </li>
+                                  <li class="clearfix">
+                                      <div class="txt"> 高级管理员 <span class="date badge badge-info mgl10">权限设置</span> </div>
+                                      <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                  </li>
+                                  <li class="clearfix">
+                                      <div class="txt"> 高级管理员 <span class="date badge badge-info mgl10">权限设置</span> </div>
+                                      <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                  </li>
+                                  <li class="clearfix">
+                                      <div class="txt"> 高级管理员 <span class="date badge badge-info mgl10">权限设置</span> </div>
+                                      <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                  </li>
+
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="span8">
+                  <div class="widget-box">
+                      <div class="widget-title"> <span class="icon"> <i class="icon-list"></i> </span>
+                          <h5>权限设置选项</h5>
+                      </div>
+                      <div class="widget-content nopadding ">
+                          <form class="form-horizontal permission-content">
+                              <div class="control-group ">
+                                  <label class="control-label">管理区域设置</label>
+                                  <div class="controls">
+                                      <select name="" id="" class="span3">
+                                          <option value="广东省">广东省</option>
+                                          <option value="湖南省">湖南省</option>
+                                          <option value="湖北省">湖北省</option>
+                                      </select>
+                                      <select name="" id="" class="span3">
+                                          <option value="深圳市">深圳市</option>
+                                          <option value="广州市">广州市</option>
+                                          <option value="珠海市">珠海市</option>
+                                      </select>
+                                      <select name="" id="" class="span3">
+                                          <option value="福田区">福田区</option>
+                                          <option value="南山区">南山区</option>
+                                          <option value="罗湖区">罗湖区</option>
+                                      </select>
+                                      <textarea name="" id="" cols="30" rows="3" class="mgt10 span9">
+                                      </textarea>
+                                  </div>
+                              </div>
+                              <div class="control-group">
+                                  <label class="control-label permission-label">客户管理设置</label>
+                                  <div class="controls">
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许修改公司和品牌信息
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许修改负责人信息
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许修改主账号和密码
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许修改账号使用状态
+                                      </label>
+                                  </div>
+                              </div>
+                              <div class="control-group">
+                                  <label class="control-label">销售管理设置</label>
+                                  <div class="controls">
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          不显示“充值重置”菜单项
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          不显示储值金额
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许对“销售项目”进行审核
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许修改账号使用状态
+                                      </label>
+                                  </div>
+                              </div>
+                              <div class="control-group">
+                                  <label class="control-label">内部交流设置</label>
+                                  <div class="controls">
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          不显示“发布公告”菜单项
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许“资料下载”中新增目录
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          允许“资料下载”修改、删除文件
+                                      </label>
+                                  </div>
+                              </div>
+                              <div class="control-group">
+                                  <label class="control-label" for="inputWarning">系统设置模块</label>
+                                  <div class="controls">
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          不显示“销售项目设置”菜单项
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          不显示“角色权限设置”菜单项
+                                      </label>
+                                      <label>
+                                          <input type="checkbox" name="radios" />
+                                          不显示“短信端口设置”菜单项
+                                      </label>
+                                  </div>
+                              </div>
+                              <input type="button" class="btn btn-info mg-right30 pull-right mgt10" value="保存"/>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+</div>
+<!-- 客情资料Modal -->
+<div id="clientInfor" class="modal hide">
+    <div class="modal-header">
+        <button data-dismiss="modal" class="close" type="button">×</button>
+        <h3>客情资料</h3>
+    </div>
+    <div class="modal-body nopadding">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="widget-box" style="margin: 0px;">
+
+                    <div class="widget-content nopadding">
+                        <form action="#" class="form-horizontal">
+                            <!--<div class="control-group">
+                                <div class="span6">
+                                    <label for="normal" class="control-label">选择版本: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="美发普及版">美发普及版</option>
+                                            <option value="美发专业版">美发专业版</option>
+                                            <option value="美容专业版">美容专业版</option>
+                                            <option value="美甲专业版">美甲专业版</option>
+                                            <option value="美容美发专业版">美容美发专业版</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <label for="normal" class="control-label">客户属性: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="单店">单店</option>
+                                            <option value="连锁店">连锁店</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>-->
+
+                            <div class="control-group">
+                                <label for="normal" class="control-label">公司名称: </label>
+                                <div class="controls">
+                                    <input type="text" class="span11"/>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label for="normal" class="control-label">品牌名称: </label>
+                                <div class="controls">
+                                    <input type="text" class="span11"/>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label for="normal" class="control-label">店铺名称: </label>
+                                <div class="controls">
+                                    <input type="text" class="span11"/>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <div class="span6">
+                                    <label for="normal" class="control-label">姓名: </label>
+                                    <div class="controls">
+                                        <input class="span11" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <label for="normal" class="control-label">性别: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="男">男</option>
+                                            <option value="女">女</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="span6">
+                                    <label for="normal" class="control-label">职位: </label>
+                                    <div class="controls">
+                                        <input class="span11" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <label for="normal" class="control-label">生日: </label>
+                                    <div class="controls">
+                                        <input class="span11" type="date"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label for="normal" class="control-label">成立年限: </label>
+                                <div class="controls">
+                                    <input type="text" class="span11"/>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <div class="span6">
+                                    <label for="normal" class="control-label">现金业绩: </label>
+                                    <div class="controls">
+                                        <input class="span11" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <label for="normal" class="control-label">劳动业绩: </label>
+                                    <div class="controls">
+                                        <input class="span11" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <div class="span6">
+                                    <label for="normal" class="control-label">家庭观念: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="">孝心</option>
+                                            <option value="">夫妻情感</option>
+                                            <option value="">亲子</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <label for="normal" class="control-label">事业观念: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="">无目标</option>
+                                            <option value="">有目标</option>
+                                            <option value="">有计划</option>
+                                            <option value="">有战略</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="span6">
+                                    <label for="normal" class="control-label">客户性格: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="">活泼型</option>
+                                            <option value="">权力型</option>
+                                            <option value="">平和型</option>
+                                            <option value="">分析型</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <label for="normal" class="control-label">客户爱好: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="">抽烟</option>
+                                            <option value="">喝酒</option>
+                                            <option value="">喝茶</option>
+                                            <option value="">其它</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="span6">
+                                    <label for="normal" class="control-label">学习观念: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="">少量</option>
+                                            <option value="">一般</option>
+                                            <option value="">积极</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <label for="normal" class="control-label">经营观念: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="">重技术</option>
+                                            <option value="">重服务</option>
+                                            <option value="">重经营</option>
+                                            <option value="">重管理</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="span6">
+                                    <label for="normal" class="control-label">互联网理念: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="">差</option>
+                                            <option value="">一般</option>
+                                            <option value="">高</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <label for="normal" class="control-label">软件重视度: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="">差</option>
+                                            <option value="">一般</option>
+                                            <option value="">高</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="span6">
+                                    <label for="normal" class="control-label">重视哪方面: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="">安全性</option>
+                                            <option value="">功能性</option>
+                                            <option value="">操作性</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <label for="normal" class="control-label">系统满意度: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="">一般</option>
+                                            <option value="">高</option>
+                                            <option value="">忠诚</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer"> <a data-dismiss="modal" class="btn btn-primary btn-success" href="#">保存</a> <a data-dismiss="modal" class="btn" href="#">取消</a> </div>
+</div>
+
+
+<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!--
+<div class="modal fade" id="model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+
+</div>
+-->
+
+
+
+
+
       <!--Footer-part-->
 <div class="row-fluid">
     <div id="footer" class="span12"> 2013 &copy; Matrix Admin. More Templates <a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
