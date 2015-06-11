@@ -70,12 +70,14 @@
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i></a>
     <ul class="sidebar-ul">
         <li ><a href="index.html"><i class="icon icon-home"></i> <span> 首页看板</span></a> </li>
-        <li class="submenu"> <a href="#"><i class="iconfont icon-xinkaihu"></i> <span>开户注册</span> <span class="icon-sort-down icon-right"></span></a>
+        <li ><a href="user-register.html"><i class="iconfont icon-xinkaihu"></i> <span> 开户注册</span></a> </li>
+
+        <!--<li class="submenu"> <a href="#"><i class="iconfont icon-xinkaihu"></i> <span>开户注册</span> <span class="icon-sort-down icon-right"></span></a>
             <ul>
                 <li class="subline"><a href="user-register.html">新增用户</a></li>
                 <li class="subline"><a href="user-modification.html">修改用户</a></li>
             </ul>
-        </li>
+        </li>-->
         <li class="submenu"> <a href="#"><i class="iconfont icon-bianmin"></i> <span>客户管理</span> <span class="icon-sort-down icon-right"></span></a>
             <ul>
                 <li><a href="client-search.html">客户查询</a></li>
@@ -194,6 +196,187 @@
         </div>
     </div>
 </div>
+<!-- 新增线索Modal -->
+<div id="userMod" class="modal hide">
+    <div class="modal-header">
+        <button data-dismiss="modal" class="close" type="button">×</button>
+        <h5> 修改用户</h5>
+    </div>
+    <div class="modal-body nopadding">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="widget-box" style="margin: 0px;">
+                    <div class="widget-content nopadding">
+                        <form action="#" class="form-horizontal">
+                            <div class="control-group">
+                                <div class="span6">
+                                    <label for="normal" class="control-label">选择版本: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="美发普及版">美发普及版</option>
+                                            <option value="美发专业版">美发专业版</option>
+                                            <option value="美容专业版">美容专业版</option>
+                                            <option value="美甲专业版">美甲专业版</option>
+                                            <option value="美容美发专业版">美容美发专业版</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <label for="normal" class="control-label">客户属性: </label>
+                                    <div class="controls">
+                                        <select name="" id="" class="span11">
+                                            <option value="单店">单店</option>
+                                            <option value="连锁店">连锁店</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label for="normal" class="control-label">公司名称: </label>
+                                <div class="controls">
+                                    <input type="text" class="span11" placeholder="公司名称"/>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label for="normal" class="control-label">选择区域</label>
+                                <div class="controls">
+                                    <div class="controls-x1">
+                                        <select class="width20">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    省
+                                    <div class="controls-x3">
+                                        <select class="width20">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    市
+                                    <div class="controls-x3">
+                                        <select class="width20">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    区/县
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label for="normal" class="control-label">店铺地址: </label>
+                                <div class="controls">
+                                    <input type="text" class="span11"/>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label for="normal" class="control-label">店铺品牌: </label>
+                                <div class="controls">
+                                    <input type="text" class="span2"/>
+                                    <input type="text" class="span2"/>
+                                    <input type="text" class="span2"/>
+                                    <input type="text" class="span2"/>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label for="normal" class="control-label">负责人姓名</label>
+                                <div class="controls">
+                                    <div class="controls-x1">
+                                        <input type="text" class="width20"/>
+                                    </div>
+                                    职位
+                                    <div class="controls-x3">
+                                        <select class="width20">
+                                            <option value="老板">老板</option>
+                                            <option value="股东">股东</option>
+                                            <option value="高管">高管</option>
+                                            <option value="店长">店长</option>
+                                        </select>
+                                    </div>
+                                    手机号
+                                    <div class="controls-x3">
+                                        <input type="text" class="width20"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label for="normal" class="control-label">机构识别码: </label>
+                                <div class="controls">
+                                    <input type="text" class="span11"/>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <div class="span6">
+                                    <label for="normal" class="control-label">主账号: </label>
+                                    <div class="controls">
+                                        <input type="text" class="span11"/>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <label for="normal" class="control-label">账号密码: </label>
+                                    <div class="controls">
+                                        <input type="text" class="span11"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label for="normal" class="control-label">账号期限</label>
+                                <div class="controls">
+                                    <div class="controls-x1">
+                                        <select class="width20">
+                                            <option value="30天">30天</option>
+                                            <option value="1年">1年</option>
+                                            <option value="2年">2年</option>
+                                            <option value="100年">100年</option>
+                                        </select>
+                                    </div>
+                                    付费状况
+                                    <div class="controls-x3">
+                                        <select class="width22">
+                                            <option value="未付费">未付费</option>
+                                            <option value="已付费">已付费</option>
+                                        </select>
+                                    </div>
+                                    金额
+                                    <div class="controls-x3">
+                                        <input type="text" class="width15"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer"> <a data-dismiss="modal" class="btn btn-primary btn-success" href="#">保存修改</a> <a data-dismiss="modal" class="btn" href="#">取消</a> </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
       <!--Footer-part-->
@@ -227,13 +410,20 @@
       <script src="assets/js/matrix.tables.js"></script>
       <script src="assets/js/matrix.chat.js"></script>
       <script src="assets/js/bootstrap-datepicker.js"></script>
+
       <!--Bootrap-table-->
       <script src="assets/bootstrap-table/bootstrap-table.js" type="text/javascript"></script>
       <!--支持中文bootstap-table-->
       <script src="assets/bootstrap-table/bootstrap-table-zh-CN.js" type="text/javascript"></script>
+      <!--editor-->
+      <script src="assets/js/bootstrap-wysihtml5.js"></script>
+      <script src="assets/js/bootstrap-wysihtml5.js"></script>
+      <script type='text/javascript' src='assets/app/js/index.js'></script>
+      <!--&lt;!&ndash;自定义js&ndash;&gt;
       <script>
           document.write("<script type='text/javascript' src='assets/app/js/index.js?"+Math.random()+";'><//script>");
-      </script>
+      </script>-->
+
 
 
   </body>

@@ -1,8 +1,8 @@
+---
+current: 在线聊天
+---
 <div id="content">
-    <div id="content-header">
-        <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页看板</a> <a href="#">Sample pages</a> <a href="#" class="current">内部交流</a> </div>
-        <h3>在线聊天</h3>
-    </div>
+    {{> content-header }}
     <div class="container-fluid"><hr>
         <div class="row-fluid">
             <div class="span12">
@@ -28,7 +28,6 @@
                         <div class="chat-content panel-left2">
                             <div class="chat-messages" id="chat-messages">
                                 <div id="chat-messages-inner">
-
                                     <p id="msg-1" class="user-linda" style="display: block;">
                                         <span class="msg-block"><img src="{{assets}}/img/demo/av2.jpg" alt="">
                                             <strong>Linda</strong>

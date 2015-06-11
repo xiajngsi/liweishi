@@ -30,15 +30,14 @@ $('#modUserTable').bootstrapTable({
 $('#userTable').bootstrapTable({
 
 });
+$('#leadsMod').bootstrapTable({
+
+});
+$('#announceTable').bootstrapTable({
+
+});
 $('#utable').bootstrapTable({
 });
-function pencil(value, row, index) {
-  return [
-    '<a class="like" href="" title="Like"><i class="icon-pencil"></i></a> '/*,
-     '<a class="remove" href="javascript:void(0)" title="Remove">删除</a>',
-     '<a class="remove" href="user-detail.html" title="Remove">详情</a>',*/
-  ].join('');
-}
 $('#stable').bootstrapTable({
 });
 $('#channeltable').bootstrapTable({
@@ -47,6 +46,28 @@ $('#addedchannaltable').bootstrapTable({
 });
 $('#salestable').bootstrapTable({
 });
+
+function pencil(value, row, index) {
+  return [
+    '<a class="like" href="#userMod" data-toggle="modal" title="用户修改"><i class="icon-pencil"></i></a> '/*,
+     '<a class="remove" href="javascript:void(0)" title="Remove">删除</a>',
+     '<a class="remove" href="user-detail.html" title="Remove">详情</a>',*/
+  ].join('');
+}
+function announceOpe(value, row, index) {
+  return [
+    '<a class="like" href="#userMod" data-toggle="modal" title="用户修改"><i class="icon-pencil"></i></a> ',
+     '<a class="remove" href="javascript:void(0)" title="Remove"><i class="icon-remove"></i></a>',
+     '<a class="remove" href="user-detail.html" title="Remove"><i class=" icon-book"></i></a>',
+  ].join('');
+}
+function leadsMod(value, row, index) {
+  return [
+    '<a class="like" title="销售线索修改"><i class="icon-pencil"></i></a> '/*,
+     '<a class="remove" href="javascript:void(0)" title="Remove">删除</a>',
+     '<a class="remove" href="user-detail.html" title="Remove">详情</a>',*/
+  ].join('');
+}
 
 /*function operateFormatter(value, row, index) {
   return [
@@ -278,7 +299,7 @@ function resetMenu() {
         enabled: false
       }
     })
-      .highcharts(); // return chart
+     /* .highcharts();*/ // return chart
   /*  销量图*/
     $('#salesVolumeChar').highcharts({
       chart: {

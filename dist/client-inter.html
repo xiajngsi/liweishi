@@ -70,12 +70,14 @@
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i></a>
     <ul class="sidebar-ul">
         <li ><a href="index.html"><i class="icon icon-home"></i> <span> 首页看板</span></a> </li>
-        <li class="submenu"> <a href="#"><i class="iconfont icon-xinkaihu"></i> <span>开户注册</span> <span class="icon-sort-down icon-right"></span></a>
+        <li ><a href="user-register.html"><i class="iconfont icon-xinkaihu"></i> <span> 开户注册</span></a> </li>
+
+        <!--<li class="submenu"> <a href="#"><i class="iconfont icon-xinkaihu"></i> <span>开户注册</span> <span class="icon-sort-down icon-right"></span></a>
             <ul>
                 <li class="subline"><a href="user-register.html">新增用户</a></li>
                 <li class="subline"><a href="user-modification.html">修改用户</a></li>
             </ul>
-        </li>
+        </li>-->
         <li class="submenu"> <a href="#"><i class="iconfont icon-bianmin"></i> <span>客户管理</span> <span class="icon-sort-down icon-right"></span></a>
             <ul>
                 <li><a href="client-search.html">客户查询</a></li>
@@ -152,13 +154,26 @@
 </div>
 
     <div class="container-fluid">
+        <div  class="quick-actions_homepage">
+            <ul class="quick-actions t-menu">
+                <li class="bg_lb"> <a href="#"> 客情资料提醒 </a></li>
+                <li class="bg_lg"> <a href="#"> 客户生日回访 </a></li>
+                <li class="bg_ly"> <a href="#"> 节假日回访 </a></li>
+                <li class="bg_lo"> <a href="#"> 回访周期提醒 </a></li>
+                <li class="bg_ls"> <a href="#"> 使用状态提醒 </a></li>
+                <li class="bg_ls"> <a href="#"> 客户续费提醒 </a></li>
+            </ul>
+        </div>        <!--<div class="search-top">
+
+
+        </div>-->
         <hr>
         <div class="row-fluid">
             <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title"> <span class="icon"> <i class="icon-list"></i> </span>
                         <h5>客情资讯</h5>
-                        <button class="btn btn-warning btn-mini pull-right">View All</button>
+                        <button class="btn btn-warning btn-mini pull-right">所有</button>
                     </div>
                     <div class="widget-content">
                         <div>
@@ -322,6 +337,7 @@
                 <div class="widget-box">
                     <div class="widget-title"> <span class="icon"> <i class="icon-list"></i> </span>
                         <h5>使用状态</h5>
+                        <button class="btn btn-warning btn-mini pull-right">所有</button>
                     </div>
                     <div class="widget-content">
                         <ul>
@@ -857,13 +873,20 @@
       <script src="assets/js/matrix.tables.js"></script>
       <script src="assets/js/matrix.chat.js"></script>
       <script src="assets/js/bootstrap-datepicker.js"></script>
+
       <!--Bootrap-table-->
       <script src="assets/bootstrap-table/bootstrap-table.js" type="text/javascript"></script>
       <!--支持中文bootstap-table-->
       <script src="assets/bootstrap-table/bootstrap-table-zh-CN.js" type="text/javascript"></script>
+      <!--editor-->
+      <script src="assets/js/bootstrap-wysihtml5.js"></script>
+      <script src="assets/js/bootstrap-wysihtml5.js"></script>
+      <script type='text/javascript' src='assets/app/js/index.js'></script>
+      <!--&lt;!&ndash;自定义js&ndash;&gt;
       <script>
           document.write("<script type='text/javascript' src='assets/app/js/index.js?"+Math.random()+";'><//script>");
-      </script>
+      </script>-->
+
 
 
   </body>
