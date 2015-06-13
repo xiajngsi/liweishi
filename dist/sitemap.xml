@@ -1,212 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/assemble/liweishi/dist/newtable.html</loc>
-    <lastmod>2015-06-11T12:28:46.667Z</lastmod>
+    <loc>https://github.com/assemble/liweishi/dist/pay-setting.html</loc>
+    <lastmod>2015-06-12T13:02:08.973Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://github.com/assemble/liweishi/dist/account-data.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <loc>https://github.com/assemble/liweishi/dist/account_add.html</loc>
+    <lastmod>2015-06-12T13:02:08.974Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/assemble/liweishi/dist/account_search.html</loc>
+    <lastmod>2015-06-12T13:02:08.974Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/addedchannel.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.974Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/addedclient.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.974Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/all_sales.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.974Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/announce.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/auth-setting.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://github.com/assemble/liweishi/dist/blog.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://github.com/assemble/liweishi/dist/btable.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/change-account.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/chat.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/client-inter.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/client-search.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/download.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/history-msg.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/index.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/msg-path-setting.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://github.com/assemble/liweishi/dist/add-account.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://github.com/assemble/liweishi/dist/pay-setting.html</loc>
-    <lastmod>2015-06-11T12:28:46.668Z</lastmod>
+    <loc>https://github.com/assemble/liweishi/dist/account_data.html</loc>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/persrank.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/public_domain.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/reg-stat.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/regrank.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/sales-leads.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/sales-project-setting.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/sales-project.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/sales-stat.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/shop-stat.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://github.com/assemble/liweishi/dist/table.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/unread-msg.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/user-add.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/user-modification.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/user-register.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/version-stat.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.975Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/assemble/liweishi/dist/year-stat.html</loc>
-    <lastmod>2015-06-11T12:28:46.669Z</lastmod>
+    <lastmod>2015-06-12T13:02:08.976Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

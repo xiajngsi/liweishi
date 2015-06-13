@@ -7,123 +7,121 @@ current: 销售项目
   {{> content-header }}
     <div class="container-fluid">
         <!--<h3>客户查询</h3>-->
-
         <div class="search-top">
-        <div class="head-top">
-            <div class="s-part4">
-                <div class="s-label c-header c-dblue">店铺品牌</div>
-                <input class="s-input " type="text" disabled>
-            </div>
-            <div class="s-part4">
-                <div class="s-label c-header c-dblue">店铺名称</div>
-                <input class="s-input" type="text">
-            </div>
-            <div class="s-part4">
-                <div class="s-label c-header c-dblue">负责人</div>
-                <input class="s-input" type="text">
-            </div>
-            <div class="s-part4">
-                <div class="s-label c-header c-dblue">手机号</div>
-                <input class="s-input" type="text"  >
-            </div>
+          <div class="head-top">
+              <div class="s-part4">
+                  <div class="s-label c-header c-dblue">店铺品牌</div>
+                  <input class="s-input " type="text" disabled>
+              </div>
+              <div class="s-part4">
+                  <div class="s-label c-header c-dblue">店铺名称</div>
+                  <input class="s-input" type="text">
+              </div>
+              <div class="s-part4">
+                  <div class="s-label c-header c-dblue">负责人</div>
+                  <input class="s-input" type="text">
+              </div>
+              <div class="s-part4">
+                  <div class="s-label c-header c-dblue">手机号</div>
+                  <input class="s-input" type="text"  >
+              </div>
+          </div>
+          <div class="head-bottom">
+              <div class="s-part4">
+                  <div class="s-label c-header c-dblue">注册日期</div>
+                  <input class="s-input" type="date" placeholder="店铺品牌" style="margin: 0 auto;">
+              </div>
+              <div class="s-part4">
+                  <div class="s-label c-header c-dblue">到期日期</div>
+                  <input class="s-input" type="date" placeholder="店铺品牌" style="margin: 0 auto;"  >
+              </div>
+              <div class="s-part4">
+                  <div class="s-label c-header c-dblue">系统版本</div>
+                  <select name="" id="" class="s-input">
+                      <option value="美发普及版">美发普及版</option>
+                      <option value="美发专业版">美发专业版</option>
+                      <option value="美容专业版">美容专业版</option>
+                      <option value="美甲专业版">美甲专业版</option>
+                      <option value="美容美发专业版">美容美发专业版</option>
+                  </select>
+              </div>
+              <div class="s-part4">
+                  <div class="s-label c-header c-dblue">店铺属性</div>
+                  <select name="" id="" class="s-input">
+                      <option value="单店">单店</option>
+                      <option value="连锁店">连锁店</option>
+                  </select>
+              </div>
+              <!--<div class="s-part span3">
+                  <div class="span6 c-header c-dblue">店铺品牌</div>
+                  <div class="span6 ">
+                      <input class="h-input" type="text" placeholder="店铺品牌" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Ahmedabad&quot;,&quot;India&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" >
+                  </div>
+              </div>
+              <div class="s-part span3">
+                  <div class="span6 c-header c-dblue">店铺品牌</div>
+                  <div class="span6 ">
+                      <input class="h-input" type="text" placeholder="店铺品牌" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Ahmedabad&quot;,&quot;India&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" >
+                  </div>
+              </div>
+              <div class="s-part span3">
+                  <div class="span6 c-header c-dblue">店铺品牌</div>
+                  <div class="span6 ">
+                      <input class="h-input" type="text" placeholder="店铺品牌" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Ahmedabad&quot;,&quot;India&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" >
+                  </div>
+              </div>
+              <div class="s-part span3">
+                  <div class="span6 c-header c-dblue">店铺品牌</div>
+                  <div class="span6 ">
+                      <input class="h-input" type="text" placeholder="店铺品牌" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Ahmedabad&quot;,&quot;India&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" >
+                  </div>
+              </div>
+              <div class="s-part span3">
+                  <div class="span6 c-header c-dblue">店铺品牌</div>
+                  <div class="span6 ">
+                      <input class="h-input" type="text" placeholder="店铺品牌" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Ahmedabad&quot;,&quot;India&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" >
+                  </div>
+              </div>-->
+              <!--<div class="width10 c-header c-dblue">注册日期</div>
+              <div class="width10 c-header c-white">
+                  <input class="h-input" type="date"  class="datepicker h-input">
+              </div>
+              <div class="width10 c-header c-dblue">到期日期</div>
+              <div class="width10 c-header c-white">
+  &lt;!&ndash;
+                  data-date="01-02-2013" data-date-format="dd-mm-yyyy" value="01-02-2013"
+  &ndash;&gt;
+                  <input type="date" class="datepicker h-input">
+              </div>
+              <div class="width10 c-header c-yellow">系统版本</div>
+              <div class="width10 c-header c-white">
+                  <div class="btn-group">
+                      <button data-toggle="dropdown" class="btn dropdown-toggle">btn-group <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">美发普及版</a></li>
+                          <li><a href="#">美发专业版</a></li>
+                          <li><a href="#">美容专业版</a></li>
+                          <li><a href="#">美甲专业版</a></li>
+                          <li><a href="#">美容美发专业版</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="width10 c-header c-lblue">店铺属性</div>
+              <div class="width10 c-header c-white">
+                  <div class="btn-group">
+                      <button data-toggle="dropdown" class="btn dropdown-toggle">btn-group <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                      </ul>
+                  </div>
+              </div>-->
+          </div>
         </div>
 
-        <div class="head-bottom">
-            <div class="s-part4">
-                <div class="s-label c-header c-dblue">注册日期</div>
-                <input class="s-input" type="date" placeholder="店铺品牌" style="margin: 0 auto;">
-            </div>
-            <div class="s-part4">
-                <div class="s-label c-header c-dblue">到期日期</div>
-                <input class="s-input" type="date" placeholder="店铺品牌" style="margin: 0 auto;"  >
-            </div>
-            <div class="s-part4">
-                <div class="s-label c-header c-dblue">系统版本</div>
-                <select name="" id="" class="s-input">
-                    <option value="美发普及版">美发普及版</option>
-                    <option value="美发专业版">美发专业版</option>
-                    <option value="美容专业版">美容专业版</option>
-                    <option value="美甲专业版">美甲专业版</option>
-                    <option value="美容美发专业版">美容美发专业版</option>
-                </select>
-            </div>
-            <div class="s-part4">
-                <div class="s-label c-header c-dblue">店铺属性</div>
-                <select name="" id="" class="s-input">
-                    <option value="单店">单店</option>
-                    <option value="连锁店">连锁店</option>
-                </select>
-            </div>
-            <!--<div class="s-part span3">
-                <div class="span6 c-header c-dblue">店铺品牌</div>
-                <div class="span6 ">
-                    <input class="h-input" type="text" placeholder="店铺品牌" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Ahmedabad&quot;,&quot;India&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" >
-                </div>
-            </div>
-            <div class="s-part span3">
-                <div class="span6 c-header c-dblue">店铺品牌</div>
-                <div class="span6 ">
-                    <input class="h-input" type="text" placeholder="店铺品牌" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Ahmedabad&quot;,&quot;India&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" >
-                </div>
-            </div>
-            <div class="s-part span3">
-                <div class="span6 c-header c-dblue">店铺品牌</div>
-                <div class="span6 ">
-                    <input class="h-input" type="text" placeholder="店铺品牌" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Ahmedabad&quot;,&quot;India&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" >
-                </div>
-            </div>
-            <div class="s-part span3">
-                <div class="span6 c-header c-dblue">店铺品牌</div>
-                <div class="span6 ">
-                    <input class="h-input" type="text" placeholder="店铺品牌" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Ahmedabad&quot;,&quot;India&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" >
-                </div>
-            </div>
-            <div class="s-part span3">
-                <div class="span6 c-header c-dblue">店铺品牌</div>
-                <div class="span6 ">
-                    <input class="h-input" type="text" placeholder="店铺品牌" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Ahmedabad&quot;,&quot;India&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" >
-                </div>
-            </div>-->
-            <!--<div class="width10 c-header c-dblue">注册日期</div>
-            <div class="width10 c-header c-white">
-                <input class="h-input" type="date"  class="datepicker h-input">
-            </div>
-            <div class="width10 c-header c-dblue">到期日期</div>
-            <div class="width10 c-header c-white">
-&lt;!&ndash;
-                data-date="01-02-2013" data-date-format="dd-mm-yyyy" value="01-02-2013"
-&ndash;&gt;
-                <input type="date" class="datepicker h-input">
-            </div>
-            <div class="width10 c-header c-yellow">系统版本</div>
-            <div class="width10 c-header c-white">
-                <div class="btn-group">
-                    <button data-toggle="dropdown" class="btn dropdown-toggle">btn-group <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">美发普及版</a></li>
-                        <li><a href="#">美发专业版</a></li>
-                        <li><a href="#">美容专业版</a></li>
-                        <li><a href="#">美甲专业版</a></li>
-                        <li><a href="#">美容美发专业版</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="width10 c-header c-lblue">店铺属性</div>
-            <div class="width10 c-header c-white">
-                <div class="btn-group">
-                    <button data-toggle="dropdown" class="btn dropdown-toggle">btn-group <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </div>
-            </div>-->
-        </div>
-
-        </div>
         <input type="search" placeholder="搜索" class="pull-right"/>
         <hr>
         <div class="row-fluid">

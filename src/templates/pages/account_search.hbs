@@ -1,0 +1,108 @@
+---
+tip-bottom: 客户管理
+current: 客户查询
+---
+<div id="content">
+  {{> content-header }}
+    <div class="container-fluid">
+        <div class="search-top">
+            <div class="head-top">
+                <div class="width10 c-header c-dblue">选择角色</div>
+                <select class="width10 c-header ">
+                    <option value="超级管理员">超级管理员</option>
+                    <option value="高级管理员">高级管理员</option>
+                    <option value="客服主管">客服主管</option>
+                    <option value="客服专员">客服专员</option>
+                    <option value="区域总监">区域总监</option>
+                    <option value="经销商">经销商</option>
+                    <option value="业务专员">业务专员</option>
+                </select>
+                <div class="width10 c-header c-green">选择区域</div>
+                <select class="width10 c-header">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <select class="width10 c-header">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <select class="width10 c-header">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <!--<div class="head-bottom">
+                <div class="width10 c-header c-red">系统版本查询</div>
+                <select class="width10 c-header c-white">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <div class="width10 c-header c-yellow">用户名称查询</div>
+                <div class="width10 c-header c-white"></div>
+                <div class="width10 c-header c-lblue">按姓名查询</div>
+                <div class="width10 c-header c-white"></div>
+                <div class="width10 c-header c-dred">短信剩余量</div>
+                <div class="width10 c-header c-white"><i class="icon-chevron-left" style="margin-left: 9%"></i></div>
+                &lt;!&ndash;<select class="width10 c-header c-white">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>&ndash;&gt;
+            </div>-->
+            <div class="sale-search">
+                <i class="icon-search"></i>
+                <span>搜索</span>
+            </div>
+        </div>
+
+        <!--<div class="head-bottom"></div>-->
+
+        <hr>
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="widget-box">
+                    <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
+                        <h5>账号列表</h5>
+                    </div>
+
+                        <!--bootstrap table-->
+                        <!--data-url="http://mikepenz.com/jsfiddle/" data-show-refresh="true"-->
+                        <table data-toggle="table"
+                               data-url="http://mikepenz.com/jsfiddle/"
+                               data-pagination="true"
+                               data-side-pagination="server"
+                               data-page-list="[5, 10, 20, 50, 100, 200]"
+                               data-height="490" id="accountSearchTable"
+                               data-toolbar="#toolbar">
+                            <thead>
+                            <tr>
+                                <!--<th data-field="state" data-checkbox="true"></th>-->
+                                <th data-field="id" data-sortable="true">注册时间</th>
+                                <th data-field="name" >账号角色</th>
+                                <th data-field="price">省份</th>
+                                <th data-field="price" >城市</th>
+                                <th data-field="price" >区/县</th>
+                                <th data-field="price" >账号名</th>
+                                <th data-field="price" >姓名</th>
+                                <th data-field="price" >手机号</th>
+                                <th data-field="operate" data-sortable="true" data-formatter="accountSearchTable"
+                                    data-events="operateEvents">操作</th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -30,13 +30,16 @@ current: 发布公告
         <div class="row-fluid">
                 <div class="widget-box">
                     <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                        <h5>wysihtml5</h5>
+                        <h5>发布公告</h5>
                     </div>
                     <div class="widget-content">
                         <div class="control-group">
                             <form>
                                 <div class="controls">
+                                    <div id="summernote"></div>
+<!--
                                     <textarea class="textarea_editor span12" rows="6" placeholder="Enter text ..."></textarea>
+-->
                                 </div>
                             </form>
                         </div>
@@ -81,7 +84,6 @@ current: 发布公告
                     <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
                         <h5>历史公告列表</h5>
                     </div>
-
                         <!--bootstrap table-->
                         <!--data-url="http://mikepenz.com/jsfiddle/" data-show-refresh="true"-->
                         <table data-toggle="table"
@@ -101,7 +103,7 @@ current: 发布公告
                                 <th data-field="price" >公告部门</th>
                                 <th data-field="price" >发布人</th>
                                 <th data-field="price" >发布状态</th>
-                                <th data-field="operate" data-sortable="true" data-formatter="announceOpe"
+                                <th data-field="operate" data-sortable="true" data-formatter="announceTable"
                                     data-events="operateEvents">操作</th>
                             </tr>
                             </thead>

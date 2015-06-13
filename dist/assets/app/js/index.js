@@ -20,6 +20,16 @@ function goPage (newURL) {
   }
 }
 
+/*summernote编辑器的启动*/
+$('.summernote').summernote({
+  height: 300,                 // set editor height
+
+  minHeight: null,             // set minimum height of editor
+  maxHeight: null,             // set maximum height of editor
+
+  focus: true,                 // set focus to editable area after initializing summernote
+});
+
 /*表格加载*/
 /*$('#modUserTable').on('all.bs.table', function (e, name, args) {
  console.log('Event:', name, ', data:', args);
@@ -33,9 +43,32 @@ $('#userTable').bootstrapTable({
 $('#leadsMod').bootstrapTable({
 
 });
+/*发布公告*/
 $('#announceTable').bootstrapTable({
 
 });
+/*发布公告操作*/
+function announceTable(value, row, index) {
+  return [
+    '<a class="like" title="销售线索修改"><i class="icon-pencil"></i></a> '/*,
+     '<a class="remove" href="javascript:void(0)" title="Remove">删除</a>',
+     '<a class="remove" href="user-detail.html" title="Remove">详情</a>',*/
+  ].join('');
+}
+
+/*账号查询表*/
+$('#accountSearchTable').bootstrapTable({
+
+});
+/*账号查询的操作*/
+function accountSearchTable(value, row, index) {
+  return [
+    '<a class="like" href="#userMod" data-toggle="modal" title="用户修改"><i class="icon-pencil"></i></a> ',
+    '<a class="remove" href="javascript:void(0)" title="Remove"><i class="icon-remove"></i></a>',
+    '<a class="remove" href="user-detail.html" title="Remove"><i class=" icon-book"></i></a>',
+  ].join('');
+}
+
 $('#utable').bootstrapTable({
 });
 $('#stable').bootstrapTable({
@@ -61,13 +94,7 @@ function announceOpe(value, row, index) {
      '<a class="remove" href="user-detail.html" title="Remove"><i class=" icon-book"></i></a>',
   ].join('');
 }
-function leadsMod(value, row, index) {
-  return [
-    '<a class="like" title="销售线索修改"><i class="icon-pencil"></i></a> '/*,
-     '<a class="remove" href="javascript:void(0)" title="Remove">删除</a>',
-     '<a class="remove" href="user-detail.html" title="Remove">详情</a>',*/
-  ].join('');
-}
+
 
 /*function operateFormatter(value, row, index) {
   return [

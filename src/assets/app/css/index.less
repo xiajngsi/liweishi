@@ -24,6 +24,7 @@
 /*修改框架样式 登录界面*/
 html body{
   min-width: 1024px;
+  padding-top: 0px;
 }
 #silebar .sidebar-ul li{
   font-size: 15px;
@@ -147,7 +148,7 @@ label, input, button, select, textarea {
 }
 .controls-x3 {
   display: inline;
-  margin-left: 2px;
+  margin-left: 1.2%;
   margin-ritht: 2px;
   padding: 10px 0;
 }
@@ -273,6 +274,12 @@ label, input, button, select, textarea {
 .mgt10{
   margin-top: 10px;
 }
+.mgt3{
+  margin-top: 3px;
+}
+.mgl3{
+  margin-left: 3px;
+}
 .width10{
   display: inline;
   width: 10%;
@@ -292,6 +299,10 @@ label, input, button, select, textarea {
 .width22{
   display: inline;
   width: 22%;
+}
+.width25{
+  display: inline;
+  width: 25%;
 }
 .width55{
   display: inline;
@@ -423,7 +434,7 @@ td.alt {
 .sale-search {
   position: absolute;
   right: 20px;
-  top: 50px;
+  top: 10px;
   width: 8%;
   height: 52px;
   color: @white;
@@ -625,7 +636,7 @@ hr {
 
 /*顶部查询模块*/
 .search-top{
-  height: 80px;
+  height: 90px;
 }
 .head-top, .head-bottom{
   width: 90%;
@@ -634,12 +645,12 @@ hr {
 .head-top{
   position: absolute;
 /*  left: 12%;*/
-  top: 50px;
+  top: 10px;
 }
 .head-bottom{
   position: absolute;
 /*  left: 12%;*/
-  top: 80px;
+  top: 50px;
 }
 .c-all{
   color: @white;
@@ -648,9 +659,11 @@ hr {
 }
 
 .c-header{
-  height: 21px;
+  height: 30px;
   margin-right: 1%;
   float: left;
+  text-align: center;
+  line-height: 30px;
 }
 .s-part4{
   width: 24%;
@@ -669,7 +682,7 @@ hr {
 }
 /*内容顶部导航的样式*/
 .t-menu li a{
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 700;
   text-align: center;
   vertical-align: middle;
@@ -725,12 +738,18 @@ hr {
   padding: 7px 10px 4px;
 }
 /*角色权限设置页面*/
-.permission-search{
+.permission-add{
   margin-top: 18px;
 }
 
-.permission-search .permission-input{
-  width: 80%;
+.permission-add label{
+  display: inline;
+}
+.permission-add .permission-input{
+  width: 40%;
+}
+.permission-add [type="button"]{
+  margin-top: -10px;
 }
 
 .permission-content .control-label{
@@ -741,4 +760,49 @@ hr {
   text-align: center;
   line-height: 20px;
   padding: 4px 0;
+}
+/*
+修改全局样式*/
+.row-fluid .span4 {
+  width: 31.499999617021278%;
+}
+.t-menu li a {
+  padding: 10px 10px;
+}
+
+.t-menu li{
+  min-width:15%;
+}
+/*
+媒体查询*/
+@media (min-width: 1200px) {
+  .quick-actions li {
+    min-width: 19%;
+    min-height: 70px;
+  }
+  .t-menu li{
+    min-width:15%;
+  }
+  .permission-add .permission-input{
+    width: 50%;
+  }
+  .controls-x3 {
+    display: inline;
+    margin-left: 1.8%;
+    margin-ritht: 2px;
+    padding: 10px 0;
+  }
+}
+
+/*账号管理模块*/
+.controls label{
+  margin-top: 5px;
+}
+/*
+解决账号管理不显示的问题*/
+#content-header {
+  position: absolute;
+  width: 100%;
+  margin-top: -36px;
+  z-index: 1;
 }
